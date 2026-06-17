@@ -1,0 +1,36 @@
+backend:
+  name: github
+  repo: 你的github用户名/仓库名
+  branch: main
+  auth_scope: repo
+
+media_folder: public/uploads
+public_folder: /uploads
+
+collections:
+  - name: categories
+    label: 功能分类管理
+    files:
+      - file: src/data/categories.json
+        label: 分类列表
+        fields:
+          - {label: ID, name: id, widget: number}
+          - {label: 分类名称, name: name, widget: string}
+          - {label: 路由标识slug, name: slug, widget: string}
+          - {label: 排序权重, name: sort, widget: number}
+
+  - name: functions
+    label: 语音功能词条
+    files:
+      - file: src/data/functions.json
+        label: 全部功能
+        fields:
+          - {label: ID, name: id, widget: number}
+          - {label: 所属分类ID, name: categoryId, widget: number}
+          - {label: 功能名称, name: funcName, widget: string}
+          - {label: 专业定义, name: definition, widget: markdown}
+          - {label: 指令示例, name: demoCommand, widget: string}
+          - {label: 演示视频链接, name: videoUrl, widget: string}
+          - {label: 视频封面图, name: videoCover, widget: image}
+          - {label: 排序, name: sort, widget: number}
+          - {label: 状态(1显示/0隐藏), name: status, widget: number}

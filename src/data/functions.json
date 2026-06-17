@@ -1,0 +1,24 @@
+[
+  {
+    "id": 1,
+    "categoryId": 1,
+    "funcName": "语音唤醒",
+    "definition": "通过预设唤醒词、物理按键、触控图标三种方式激活语音交互引擎，是所有语音操作的前置触发能力，区分冷唤醒、热唤醒两种模式。分类：自定义唤醒词唤醒、方向盘语音键唤醒、中控屏触控唤醒。",
+    "demoCommand": "你好小P / 嗨NOMI / 小艺小艺",
+    "videoUrl": "https://demo-video-link.mp4",
+    "videoCover": "/cover/wake.jpg",
+    "sort": 1,
+    "status": 1
+  },
+  {
+    "id": 2,
+    "categoryId": 1,
+    "funcName": "多音区分区识别",
+    "definition": "依托车内多麦克风阵列波束成形算法，精准识别语音发出位置（主驾/副驾/左后/右后），分区执行对应指令，实现乘员指令隔离、互不干扰。",
+    "demoCommand": "打开车窗",
+    "videoUrl": "https://demo-video-link2.mp4",
+    "videoCover": "/cover/zone.jpg",
+    "sort": 2,
+    "status": 1
+  }
+]

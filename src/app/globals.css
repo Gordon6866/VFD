@@ -1,0 +1,14 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  @apply bg-gray-50 text-gray-800;
+}
+
+.modal-mask {
+  @apply fixed inset-0 bg-black/70 z-50 flex items-center justify-center p-4;
+}
+.modal-box {
+  @apply w-full max-w-4xl bg-white rounded-xl overflow-hidden;
+}

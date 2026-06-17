@@ -1,0 +1,50 @@
+[
+  {
+    "id": 1,
+    "name": "底层交互技术核心功能",
+    "slug": "base-interact",
+    "sort": 1
+  },
+  {
+    "id": 2,
+    "name": "整车硬件座舱控制功能",
+    "slug": "car-control",
+    "sort": 2
+  },
+  {
+    "id": 3,
+    "name": "导航出行语音功能",
+    "slug": "nav-travel",
+    "sort": 3
+  },
+  {
+    "id": 4,
+    "name": "影音娱乐语音功能",
+    "slug": "media",
+    "sort": 4
+  },
+  {
+    "id": 5,
+    "name": "通讯互联语音功能",
+    "slug": "connect",
+    "sort": 5
+  },
+  {
+    "id": 6,
+    "name": "生活服务&问答语音功能",
+    "slug": "life-service",
+    "sort": 6
+  },
+  {
+    "id": 7,
+    "name": "AI主动智能感知功能",
+    "slug": "ai-active",
+    "sort": 7
+  },
+  {
+    "id": 8,
+    "name": "系统设置类语音功能",
+    "slug": "system-setting",
+    "sort": 8
+  }
+]

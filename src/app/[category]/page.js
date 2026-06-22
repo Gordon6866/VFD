@@ -1,47 +1,34 @@
-"use client";
-import { useState } from "react";
-import FuncCard from "@/components/FuncCard";
-import VideoModal from "@/components/VideoModal";
-import SearchBar from "@/components/SearchBar";
 import categories from "@/data/categories.json";
 import functions from "@/data/functions.json";
 
+// 静态预渲染分类路由
 export async function generateStaticParams() {
-  return categories.map((cat) => ({ category: cat.slug }));
+  return categories.map(cat => ({ category: cat.slug }));
 }
 
 export default function CategoryPage({ params }) {
   const { category } = params;
-  const [searchText, setSearchText] = useState("");
-  const [currentFunc, setCurrentFunc] = useState(null);
-
-  const catInfo = categories.find((c) => c.slug === category);
-  const catId = catInfo?.id;
-
-  const list = functions
-    .filter((f) => f.categoryId === catId && f.status === 1)
-    .filter((f) => f.funcName.includes(searchText) || f.definition.includes(searchText))
-    .sort((a, b) => a.sort - b.sort);
-
-  const openModal = (item) => setCurrentFunc(item);
-  const closeModal = () => setCurrentFunc(null);
+  const currentCat = categories.find(c => c.slug === category);
+  const catFunctions = functions.filter(item => item.category === category);
 
   return (
-    <div>
-      <h1 className="text-3xl font-bold text-center mb-6">{catInfo?.name}</h1>
-      <SearchBar value={searchText} onChange={setSearchText} />
+    <main className="max-w-7xl mx-auto px-4 py-8 md:py-12">
+      <a href="/" className="text-blue-600 mb-4 inline-block">← 返回首页</a>
+      <h1 className="mb-2">{currentCat?.name}</h1>
+      <p className="text-slate-500 mb-10">该分类下全部语音功能</p>
 
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
-        {list.map((item) => (
-          <FuncCard key={item.id} item={item} onClick={openModal} />
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+        {catFunctions.map(item => (
+          <div
+            key={item.id}
+            className="func-card"
+          >
+            <h3>{item.name}</h3>
+            <p className="text-slate-500 mt-2 text-sm">{item.desc}</p>
+            <div className="mt-4 text-blue-600 text-sm">点击播放视频 →</div>
+          </div>
         ))}
       </div>
-
-      {list.length === 0 && (
-        <p className="text-center text-gray-500 mt-10">该分类暂无功能或无搜索结果</p>
-      )}
-
-      {currentFunc && <VideoModal item={currentFunc} closeModal={closeModal} />}
-    </div>
+    </main>
   );
 }

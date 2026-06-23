@@ -2,210 +2,1567 @@
   {
     "id": 1,
     "categoryId": 1,
-    "funcName": "语音唤醒",
-    "definition": "通过预设唤醒词、物理按键、触控图标三种方式激活语音交互引擎，是所有语音操作的前置触发能力，区分冷唤醒、热唤醒两种模式。",
-    "demoCommand": "你好小P / 嗨NOMI / 小艺小艺",
-    "videoUrl": "https://demo-video-link.mp4",
-    "videoCover": "/cover/wake.jpg",
+    "funcName": "拾音降噪",
+    "definition": "采用先进的声学算法，有效降低车内环境噪音和道路噪音，提升语音识别准确率和通话质量。",
+    "demoCommand": "（自动生效）",
+    "carModels": [
+      {
+        "carModel": "理想L6",
+        "embedUrl": "https://foxconn.sharepoint.com/sites/msteams_809b30_201831-Off-Board/_layouts/15/embed.aspx?UniqueId=91aaf445-cf2d-4f2f-ade8-d3f4fda73f41&embed=%7B%22ust%22%3Atrue%7D&referrer=StreamWebApp&referrerScenario=EmbedDialog.Create"
+      },
+      {
+        "carModel": "问界M8",
+        "embedUrl": ""
+      },
+      {
+        "carModel": "银河M9",
+        "embedUrl": ""
+      },
+      {
+        "carModel": "深蓝L06",
+        "embedUrl": ""
+      }
+    ],
     "sort": 1,
     "status": 1
   },
   {
     "id": 2,
     "categoryId": 1,
-    "funcName": "多音区分区识别",
-    "definition": "依托车内多麦克风阵列波束成形算法，精准识别语音发出位置（主驾/副驾/左后/右后），分区执行对应指令。",
+    "funcName": "多音区VAD",
+    "definition": "支持多音区语音活动检测，精准识别车内不同位置的语音输入，实现分区响应。",
     "demoCommand": "打开车窗",
-    "videoUrl": "https://demo-video-link2.mp4",
-    "videoCover": "/cover/zone.jpg",
+    "carModels": [
+      {
+        "carModel": "理想L6",
+        "embedUrl": ""
+      },
+      {
+        "carModel": "问界M8",
+        "embedUrl": ""
+      },
+      {
+        "carModel": "银河M9",
+        "embedUrl": ""
+      },
+      {
+        "carModel": "深蓝L06",
+        "embedUrl": ""
+      }
+    ],
     "sort": 2,
     "status": 1
   },
   {
     "id": 3,
-    "categoryId": 1,
-    "funcName": "连续对话",
-    "definition": "支持多轮对话上下文理解，用户无需重复唤醒，可连续发出多条指令，系统自动识别对话结束时机。",
-    "demoCommand": "导航到公司 / 走高速 / 避开拥堵",
-    "videoUrl": "https://demo-video-link.mp4",
-    "videoCover": "",
-    "sort": 3,
+    "categoryId": 2,
+    "funcName": "免唤醒/全时对话",
+    "definition": "小鹏全时对话技术，无需唤醒词即可随时与车机对话，打造自然流畅的交互体验。",
+    "demoCommand": "打开空调 / 导航回家",
+    "carModels": [
+      {
+        "carModel": "理想L6",
+        "embedUrl": ""
+      },
+      {
+        "carModel": "问界M8",
+        "embedUrl": ""
+      },
+      {
+        "carModel": "银河M9",
+        "embedUrl": ""
+      },
+      {
+        "carModel": "深蓝L06",
+        "embedUrl": ""
+      }
+    ],
+    "sort": 1,
     "status": 1
   },
   {
     "id": 4,
-    "categoryId": 1,
-    "funcName": "可见即可说",
-    "definition": "屏幕上可见的功能按钮、菜单项均可通过语音指令操作，实现全界面语音控制，提升交互便捷性。",
-    "demoCommand": "点击空调 / 打开设置",
-    "videoUrl": "https://demo-video-link.mp4",
-    "videoCover": "",
-    "sort": 4,
+    "categoryId": 2,
+    "funcName": "按钮唤醒",
+    "definition": "支持物理按键和虚拟按键两种唤醒方式，一键快速激活语音助手。",
+    "demoCommand": "（按语音键）",
+    "carModels": [
+      {
+        "carModel": "理想L6",
+        "embedUrl": ""
+      },
+      {
+        "carModel": "问界M8",
+        "embedUrl": ""
+      },
+      {
+        "carModel": "银河M9",
+        "embedUrl": ""
+      },
+      {
+        "carModel": "深蓝L06",
+        "embedUrl": ""
+      }
+    ],
+    "sort": 2,
     "status": 1
   },
   {
     "id": 5,
     "categoryId": 2,
-    "funcName": "空调控制",
-    "definition": "支持语音控制空调开关、温度调节、风量调节、出风模式、内外循环等全功能，解放双手。",
-    "demoCommand": "空调25度 / 风量调大 / 打开内循环",
-    "videoUrl": "https://demo-video-link.mp4",
-    "videoCover": "",
-    "sort": 1,
+    "funcName": "唤醒词自定义",
+    "definition": "支持用户自定义唤醒词，打造专属的语音交互体验，支持多种个性化唤醒词。",
+    "demoCommand": "设置唤醒词为你好小鹏",
+    "carModels": [
+      {
+        "carModel": "理想L6",
+        "embedUrl": ""
+      },
+      {
+        "carModel": "问界M8",
+        "embedUrl": ""
+      },
+      {
+        "carModel": "银河M9",
+        "embedUrl": ""
+      },
+      {
+        "carModel": "深蓝L06",
+        "embedUrl": ""
+      }
+    ],
+    "sort": 3,
     "status": 1
   },
   {
     "id": 6,
     "categoryId": 2,
-    "funcName": "车窗控制",
-    "definition": "支持四门车窗独立控制，可精确指定开启比例（如主驾车窗开一半），支持一键升降。",
-    "demoCommand": "打开主驾车窗 / 车窗开一半 / 关闭所有车窗",
-    "videoUrl": "https://demo-video-link.mp4",
-    "videoCover": "",
-    "sort": 2,
+    "funcName": "One-shot",
+    "definition": "支持前置和后置One-shot模式，用户可在唤醒词后直接说出指令，无需等待响应。",
+    "demoCommand": "你好小P打开空调",
+    "carModels": [
+      {
+        "carModel": "理想L6",
+        "embedUrl": ""
+      },
+      {
+        "carModel": "问界M8",
+        "embedUrl": ""
+      },
+      {
+        "carModel": "银河M9",
+        "embedUrl": ""
+      },
+      {
+        "carModel": "深蓝L06",
+        "embedUrl": ""
+      }
+    ],
+    "sort": 4,
     "status": 1
   },
   {
     "id": 7,
     "categoryId": 2,
-    "funcName": "座椅加热/通风",
-    "definition": "支持座椅加热、通风功能的语音控制，可指定座位（主驾/副驾/后排）和档位调节。",
-    "demoCommand": "主驾座椅加热开到3档 / 关闭座椅通风",
-    "videoUrl": "https://demo-video-link.mp4",
-    "videoCover": "",
-    "sort": 3,
+    "funcName": "自定义唤醒回复语",
+    "definition": "支持用户自定义唤醒回复语和响应方式，打造个性化的语音助手形象。",
+    "demoCommand": "设置唤醒回复为你好",
+    "carModels": [
+      {
+        "carModel": "理想L6",
+        "embedUrl": ""
+      },
+      {
+        "carModel": "问界M8",
+        "embedUrl": ""
+      },
+      {
+        "carModel": "银河M9",
+        "embedUrl": ""
+      },
+      {
+        "carModel": "深蓝L06",
+        "embedUrl": ""
+      }
+    ],
+    "sort": 5,
     "status": 1
   },
   {
     "id": 8,
-    "categoryId": 3,
-    "funcName": "目的地搜索",
-    "definition": "支持POI名称、地址、类型等多种方式搜索目的地，自动匹配最佳结果并提供详细信息。",
-    "demoCommand": "导航到天安门 / 附近的加油站",
-    "videoUrl": "https://demo-video-link.mp4",
-    "videoCover": "",
-    "sort": 1,
+    "categoryId": 2,
+    "funcName": "声纹识别",
+    "definition": "支持声纹识别功能，可识别不同用户的声音，实现个性化服务和权限管理。",
+    "demoCommand": "（自动识别）",
+    "carModels": [
+      {
+        "carModel": "理想L6",
+        "embedUrl": ""
+      },
+      {
+        "carModel": "问界M8",
+        "embedUrl": ""
+      },
+      {
+        "carModel": "银河M9",
+        "embedUrl": ""
+      },
+      {
+        "carModel": "深蓝L06",
+        "embedUrl": ""
+      }
+    ],
+    "sort": 6,
     "status": 1
   },
   {
     "id": 9,
     "categoryId": 3,
-    "funcName": "路线偏好设置",
-    "definition": "支持多种路线偏好设置，包括高速优先、最短时间、躲避拥堵、少收费等，可实时切换。",
-    "demoCommand": "走高速 / 避开拥堵 / 不走收费路段",
-    "videoUrl": "https://demo-video-link.mp4",
-    "videoCover": "",
-    "sort": 2,
+    "funcName": "语音形象IP",
+    "definition": "提供可爱的抽象语音形象IP，通过生动的视觉反馈增强语音交互的趣味性和亲和力。",
+    "demoCommand": "（自动显示）",
+    "carModels": [
+      {
+        "carModel": "理想L6",
+        "embedUrl": ""
+      },
+      {
+        "carModel": "问界M8",
+        "embedUrl": ""
+      },
+      {
+        "carModel": "银河M9",
+        "embedUrl": ""
+      },
+      {
+        "carModel": "深蓝L06",
+        "embedUrl": ""
+      }
+    ],
+    "sort": 1,
     "status": 1
   },
   {
     "id": 10,
-    "categoryId": 4,
-    "funcName": "音乐播放控制",
-    "definition": "支持播放、暂停、上一首、下一首、收藏等基础控制，可指定歌手、歌名、专辑、歌单进行精准播放。",
-    "demoCommand": "播放周杰伦的歌 / 下一首 / 收藏这首歌",
-    "videoUrl": "https://demo-video-link.mp4",
-    "videoCover": "",
-    "sort": 1,
+    "categoryId": 3,
+    "funcName": "语音形象自定义",
+    "definition": "支持用户自定义语音形象的外观、颜色、动画等，打造专属的语音助手形象。",
+    "demoCommand": "设置语音形象为卡通风格",
+    "carModels": [
+      {
+        "carModel": "理想L6",
+        "embedUrl": ""
+      },
+      {
+        "carModel": "问界M8",
+        "embedUrl": ""
+      },
+      {
+        "carModel": "银河M9",
+        "embedUrl": ""
+      },
+      {
+        "carModel": "深蓝L06",
+        "embedUrl": ""
+      }
+    ],
+    "sort": 2,
     "status": 1
   },
   {
     "id": 11,
-    "categoryId": 4,
-    "funcName": "视频应用控制",
-    "definition": "支持爱奇艺、腾讯视频等主流视频应用的语音搜索、播放、暂停等操作，停车时可观看。",
-    "demoCommand": "打开爱奇艺 / 播放流浪地球",
-    "videoUrl": "https://demo-video-link.mp4",
-    "videoCover": "",
-    "sort": 2,
+    "categoryId": 3,
+    "funcName": "表情动作同步",
+    "definition": "语音形象的表情和动作与语音内容同步，增强交互的生动性和情感表达。",
+    "demoCommand": "（自动同步）",
+    "carModels": [
+      {
+        "carModel": "理想L6",
+        "embedUrl": ""
+      },
+      {
+        "carModel": "问界M8",
+        "embedUrl": ""
+      },
+      {
+        "carModel": "银河M9",
+        "embedUrl": ""
+      },
+      {
+        "carModel": "深蓝L06",
+        "embedUrl": ""
+      }
+    ],
+    "sort": 3,
     "status": 1
   },
   {
     "id": 12,
-    "categoryId": 5,
-    "funcName": "蓝牙电话",
-    "definition": "支持语音拨号、接听、挂断、回拨等操作，可读取通讯录并语音选择联系人。",
-    "demoCommand": "打电话给张三 / 接听电话 / 挂断",
-    "videoUrl": "https://demo-video-link.mp4",
-    "videoCover": "",
-    "sort": 1,
+    "categoryId": 3,
+    "funcName": "多模态交互-静音手势",
+    "definition": "支持静音手势操作，通过特定手势实现静音、暂停等功能，无需语音指令。",
+    "demoCommand": "（挥手静音）",
+    "carModels": [
+      {
+        "carModel": "理想L6",
+        "embedUrl": ""
+      },
+      {
+        "carModel": "问界M8",
+        "embedUrl": ""
+      },
+      {
+        "carModel": "银河M9",
+        "embedUrl": ""
+      },
+      {
+        "carModel": "深蓝L06",
+        "embedUrl": ""
+      }
+    ],
+    "sort": 4,
     "status": 1
   },
   {
     "id": 13,
-    "categoryId": 5,
-    "funcName": "微信消息",
-    "definition": "支持语音播报微信消息、语音回复、发送位置等功能，驾驶时安全处理社交信息。",
-    "demoCommand": "播报微信消息 / 回复好的收到",
-    "videoUrl": "https://demo-video-link.mp4",
-    "videoCover": "",
-    "sort": 2,
+    "categoryId": 3,
+    "funcName": "多模态交互-视线追踪",
+    "definition": "基于视线追踪技术的语音融合交互，根据用户视线自动调整交互方式。",
+    "demoCommand": "（自动检测视线）",
+    "carModels": [
+      {
+        "carModel": "理想L6",
+        "embedUrl": ""
+      },
+      {
+        "carModel": "问界M8",
+        "embedUrl": ""
+      },
+      {
+        "carModel": "银河M9",
+        "embedUrl": ""
+      },
+      {
+        "carModel": "深蓝L06",
+        "embedUrl": ""
+      }
+    ],
+    "sort": 5,
     "status": 1
   },
   {
     "id": 14,
-    "categoryId": 6,
-    "funcName": "天气查询",
-    "definition": "支持查询当前城市及任意城市的天气情况、空气质量、未来天气预报等信息。",
-    "demoCommand": "今天天气怎么样 / 北京明天天气",
-    "videoUrl": "https://demo-video-link.mp4",
-    "videoCover": "",
-    "sort": 1,
+    "categoryId": 3,
+    "funcName": "多模态交互-手势融合",
+    "definition": "支持基于手势的语音融合交互，手势操作与语音指令无缝结合。",
+    "demoCommand": "（手势+语音）",
+    "carModels": [
+      {
+        "carModel": "理想L6",
+        "embedUrl": ""
+      },
+      {
+        "carModel": "问界M8",
+        "embedUrl": ""
+      },
+      {
+        "carModel": "银河M9",
+        "embedUrl": ""
+      },
+      {
+        "carModel": "深蓝L06",
+        "embedUrl": ""
+      }
+    ],
+    "sort": 6,
     "status": 1
   },
   {
     "id": 15,
-    "categoryId": 6,
-    "funcName": "餐厅推荐",
-    "definition": "基于当前位置推荐附近餐厅，支持按菜系、评分、距离等条件筛选，可直接导航前往。",
-    "demoCommand": "附近有什么好吃的 / 推荐川菜馆",
-    "videoUrl": "https://demo-video-link.mp4",
-    "videoCover": "",
-    "sort": 2,
+    "categoryId": 4,
+    "funcName": "方言支持",
+    "definition": "支持多种方言和外语识别，满足不同地区用户的语音交互需求。",
+    "demoCommand": "用四川话说打开空调",
+    "carModels": [
+      {
+        "carModel": "理想L6",
+        "embedUrl": ""
+      },
+      {
+        "carModel": "问界M8",
+        "embedUrl": ""
+      },
+      {
+        "carModel": "银河M9",
+        "embedUrl": ""
+      },
+      {
+        "carModel": "深蓝L06",
+        "embedUrl": ""
+      }
+    ],
+    "sort": 1,
     "status": 1
   },
   {
     "id": 16,
-    "categoryId": 7,
-    "funcName": "疲劳驾驶提醒",
-    "definition": "通过面部识别技术监测驾驶员状态，检测到疲劳特征（如闭眼、打哈欠）时主动语音提醒休息。",
-    "demoCommand": "（自动触发）您已疲劳驾驶，建议休息",
-    "videoUrl": "https://demo-video-link.mp4",
-    "videoCover": "",
-    "sort": 1,
+    "categoryId": 4,
+    "funcName": "模糊指令",
+    "definition": "支持模糊语义理解，即使指令表达不完整或不准确也能正确识别意图。",
+    "demoCommand": "有点热",
+    "carModels": [
+      {
+        "carModel": "理想L6",
+        "embedUrl": ""
+      },
+      {
+        "carModel": "问界M8",
+        "embedUrl": ""
+      },
+      {
+        "carModel": "银河M9",
+        "embedUrl": ""
+      },
+      {
+        "carModel": "深蓝L06",
+        "embedUrl": ""
+      }
+    ],
+    "sort": 2,
     "status": 1
   },
   {
     "id": 17,
-    "categoryId": 7,
-    "funcName": "智能场景推荐",
-    "definition": "基于时间、位置、天气等上下文信息，主动推荐相关服务（如雨天提醒关闭天窗、长途自动规划休息点）。",
-    "demoCommand": "（自动触发）今天有雨，要关闭天窗吗？",
-    "videoUrl": "https://demo-video-link.mp4",
-    "videoCover": "",
-    "sort": 2,
+    "categoryId": 4,
+    "funcName": "全双工-打断",
+    "definition": "支持声学打断和语义打断，用户可随时打断系统回复，实现自然流畅的对话体验。",
+    "demoCommand": "系统说话时直接说出新指令",
+    "carModels": [
+      {
+        "carModel": "理想L6",
+        "embedUrl": ""
+      },
+      {
+        "carModel": "问界M8",
+        "embedUrl": ""
+      },
+      {
+        "carModel": "银河M9",
+        "embedUrl": ""
+      },
+      {
+        "carModel": "深蓝L06",
+        "embedUrl": ""
+      }
+    ],
+    "sort": 3,
     "status": 1
   },
   {
     "id": 18,
-    "categoryId": 8,
-    "funcName": "音量调节",
-    "definition": "支持媒体音量、导航音量、通话音量独立控制，可精确调节或设置为特定档位。",
-    "demoCommand": "音量调到20 / 导航声音大一点",
-    "videoUrl": "https://demo-video-link.mp4",
-    "videoCover": "",
-    "sort": 1,
+    "categoryId": 4,
+    "funcName": "语义拒识",
+    "definition": "智能识别无效指令并礼貌拒绝，避免误操作，支持多模态拒识方式。",
+    "demoCommand": "无效指令",
+    "carModels": [
+      {
+        "carModel": "理想L6",
+        "embedUrl": ""
+      },
+      {
+        "carModel": "问界M8",
+        "embedUrl": ""
+      },
+      {
+        "carModel": "银河M9",
+        "embedUrl": ""
+      },
+      {
+        "carModel": "深蓝L06",
+        "embedUrl": ""
+      }
+    ],
+    "sort": 4,
     "status": 1
   },
   {
     "id": 19,
-    "categoryId": 8,
-    "funcName": "屏幕亮度调节",
-    "definition": "支持中控屏、仪表盘、抬头显示（HUD）的亮度调节，可设置为自动模式。",
-    "demoCommand": "屏幕亮度调暗 / 打开自动亮度",
-    "videoUrl": "https://demo-video-link.mp4",
-    "videoCover": "",
+    "categoryId": 4,
+    "funcName": "多人自由说",
+    "definition": "源自蔚来的多人自由说技术，支持车内多人同时对话，系统自动识别说话人。",
+    "demoCommand": "多人同时对话",
+    "carModels": [
+      {
+        "carModel": "理想L6",
+        "embedUrl": ""
+      },
+      {
+        "carModel": "问界M8",
+        "embedUrl": ""
+      },
+      {
+        "carModel": "银河M9",
+        "embedUrl": ""
+      },
+      {
+        "carModel": "深蓝L06",
+        "embedUrl": ""
+      }
+    ],
+    "sort": 5,
+    "status": 1
+  },
+  {
+    "id": 20,
+    "categoryId": 4,
+    "funcName": "连续对话",
+    "definition": "支持多轮对话上下文理解，用户无需重复唤醒，可连续发出多条指令。",
+    "demoCommand": "导航到公司 / 走高速 / 避开拥堵",
+    "carModels": [
+      {
+        "carModel": "理想L6",
+        "embedUrl": ""
+      },
+      {
+        "carModel": "问界M8",
+        "embedUrl": ""
+      },
+      {
+        "carModel": "银河M9",
+        "embedUrl": ""
+      },
+      {
+        "carModel": "深蓝L06",
+        "embedUrl": ""
+      }
+    ],
+    "sort": 6,
+    "status": 1
+  },
+  {
+    "id": 21,
+    "categoryId": 4,
+    "funcName": "上下文指代",
+    "definition": "支持上下文指代理解，能够正确解析代词、省略等语言现象，实现自然对话。",
+    "demoCommand": "导航到公司 / 那里有停车场吗",
+    "carModels": [
+      {
+        "carModel": "理想L6",
+        "embedUrl": ""
+      },
+      {
+        "carModel": "问界M8",
+        "embedUrl": ""
+      },
+      {
+        "carModel": "银河M9",
+        "embedUrl": ""
+      },
+      {
+        "carModel": "深蓝L06",
+        "embedUrl": ""
+      }
+    ],
+    "sort": 7,
+    "status": 1
+  },
+  {
+    "id": 22,
+    "categoryId": 4,
+    "funcName": "跨音区上下文关联",
+    "definition": "支持跨音区的上下文关联，不同座位的对话内容可以相互关联和引用。",
+    "demoCommand": "主驾：导航到公园 / 副驾：那里好玩吗",
+    "carModels": [
+      {
+        "carModel": "理想L6",
+        "embedUrl": ""
+      },
+      {
+        "carModel": "问界M8",
+        "embedUrl": ""
+      },
+      {
+        "carModel": "银河M9",
+        "embedUrl": ""
+      },
+      {
+        "carModel": "深蓝L06",
+        "embedUrl": ""
+      }
+    ],
+    "sort": 8,
+    "status": 1
+  },
+  {
+    "id": 23,
+    "categoryId": 4,
+    "funcName": "多意复合图指令",
+    "definition": "支持复杂的多意图复合指令，一次语音可包含多个操作意图。",
+    "demoCommand": "打开空调并播放音乐",
+    "carModels": [
+      {
+        "carModel": "理想L6",
+        "embedUrl": ""
+      },
+      {
+        "carModel": "问界M8",
+        "embedUrl": ""
+      },
+      {
+        "carModel": "银河M9",
+        "embedUrl": ""
+      },
+      {
+        "carModel": "深蓝L06",
+        "embedUrl": ""
+      }
+    ],
+    "sort": 9,
+    "status": 1
+  },
+  {
+    "id": 24,
+    "categoryId": 4,
+    "funcName": "可见即可说",
+    "definition": "屏幕上可见的功能按钮、菜单项均可通过语音指令操作，实现全界面语音控制。",
+    "demoCommand": "点击空调 / 打开设置",
+    "carModels": [
+      {
+        "carModel": "理想L6",
+        "embedUrl": ""
+      },
+      {
+        "carModel": "问界M8",
+        "embedUrl": ""
+      },
+      {
+        "carModel": "银河M9",
+        "embedUrl": ""
+      },
+      {
+        "carModel": "深蓝L06",
+        "embedUrl": ""
+      }
+    ],
+    "sort": 10,
+    "status": 1
+  },
+  {
+    "id": 25,
+    "categoryId": 4,
+    "funcName": "引导澄清",
+    "definition": "当指令不明确时，系统主动引导用户澄清，确保正确理解用户意图。",
+    "demoCommand": "去那个地方（系统：请问你想去哪里？）",
+    "carModels": [
+      {
+        "carModel": "理想L6",
+        "embedUrl": "https://foxconn.sharepoint.com/sites/msteams_809b30_201831-Off-Board/_layouts/15/embed.aspx?UniqueId=20a16d83-fffe-4dfd-b6d2-c3c169f42862&embed=%7B%22ust%22%3Atrue%2C%22hv%22%3A%22CopyEmbedCode%22%7D&referrer=StreamWebApp&referrerScenario=EmbedDialog.Create"
+      },
+      {
+        "carModel": "问界M8",
+        "embedUrl": ""
+      },
+      {
+        "carModel": "银河M9",
+        "embedUrl": ""
+      },
+      {
+        "carModel": "深蓝L06",
+        "embedUrl": ""
+      }
+    ],
+    "sort": 11,
+    "status": 1
+  },
+  {
+    "id": 26,
+    "categoryId": 4,
+    "funcName": "聆听等待",
+    "definition": "智能判断用户是否说完，在合适时机开始响应，避免打断用户说话。",
+    "demoCommand": "（自动检测）",
+    "carModels": [
+      {
+        "carModel": "理想L6",
+        "embedUrl": ""
+      },
+      {
+        "carModel": "问界M8",
+        "embedUrl": ""
+      },
+      {
+        "carModel": "银河M9",
+        "embedUrl": ""
+      },
+      {
+        "carModel": "深蓝L06",
+        "embedUrl": ""
+      }
+    ],
+    "sort": 12,
+    "status": 1
+  },
+  {
+    "id": 27,
+    "categoryId": 5,
+    "funcName": "多音色自定义",
+    "definition": "支持多种音色选择和自定义，用户可根据喜好设置语音助手的声音。",
+    "demoCommand": "设置声音为温柔女声",
+    "carModels": [
+      {
+        "carModel": "理想L6",
+        "embedUrl": ""
+      },
+      {
+        "carModel": "问界M8",
+        "embedUrl": ""
+      },
+      {
+        "carModel": "银河M9",
+        "embedUrl": ""
+      },
+      {
+        "carModel": "深蓝L06",
+        "embedUrl": ""
+      }
+    ],
+    "sort": 1,
+    "status": 1
+  },
+  {
+    "id": 28,
+    "categoryId": 5,
+    "funcName": "MBTI人设",
+    "definition": "支持MBTI人设设定，语音助手的性格和语气可根据用户偏好进行调整。",
+    "demoCommand": "设置为人格类型INTJ",
+    "carModels": [
+      {
+        "carModel": "理想L6",
+        "embedUrl": ""
+      },
+      {
+        "carModel": "问界M8",
+        "embedUrl": ""
+      },
+      {
+        "carModel": "银河M9",
+        "embedUrl": ""
+      },
+      {
+        "carModel": "深蓝L06",
+        "embedUrl": ""
+      }
+    ],
     "sort": 2,
+    "status": 1
+  },
+  {
+    "id": 29,
+    "categoryId": 5,
+    "funcName": "儿童对话模式",
+    "definition": "专门为儿童设计的对话模式，使用更简单的语言和更友好的语气。",
+    "demoCommand": "给我讲个故事",
+    "carModels": [
+      {
+        "carModel": "理想L6",
+        "embedUrl": ""
+      },
+      {
+        "carModel": "问界M8",
+        "embedUrl": ""
+      },
+      {
+        "carModel": "银河M9",
+        "embedUrl": ""
+      },
+      {
+        "carModel": "深蓝L06",
+        "embedUrl": ""
+      }
+    ],
+    "sort": 3,
+    "status": 1
+  },
+  {
+    "id": 30,
+    "categoryId": 5,
+    "funcName": "声音复刻",
+    "definition": "支持用户声音复刻，让语音助手拥有与用户相似的声音。",
+    "demoCommand": "录制我的声音",
+    "carModels": [
+      {
+        "carModel": "理想L6",
+        "embedUrl": ""
+      },
+      {
+        "carModel": "问界M8",
+        "embedUrl": ""
+      },
+      {
+        "carModel": "银河M9",
+        "embedUrl": ""
+      },
+      {
+        "carModel": "深蓝L06",
+        "embedUrl": ""
+      }
+    ],
+    "sort": 4,
+    "status": 1
+  },
+  {
+    "id": 31,
+    "categoryId": 5,
+    "funcName": "音效音调",
+    "definition": "支持音效和音调调节，可自定义语音助手的声音效果和语调。",
+    "demoCommand": "声音高一点",
+    "carModels": [
+      {
+        "carModel": "理想L6",
+        "embedUrl": ""
+      },
+      {
+        "carModel": "问界M8",
+        "embedUrl": ""
+      },
+      {
+        "carModel": "银河M9",
+        "embedUrl": ""
+      },
+      {
+        "carModel": "深蓝L06",
+        "embedUrl": ""
+      }
+    ],
+    "sort": 5,
+    "status": 1
+  },
+  {
+    "id": 32,
+    "categoryId": 5,
+    "funcName": "报警提示音",
+    "definition": "提供多种报警提示音，确保驾驶安全提醒清晰可辨。",
+    "demoCommand": "（自动播放）",
+    "carModels": [
+      {
+        "carModel": "理想L6",
+        "embedUrl": ""
+      },
+      {
+        "carModel": "问界M8",
+        "embedUrl": ""
+      },
+      {
+        "carModel": "银河M9",
+        "embedUrl": ""
+      },
+      {
+        "carModel": "深蓝L06",
+        "embedUrl": ""
+      }
+    ],
+    "sort": 6,
+    "status": 1
+  },
+  {
+    "id": 33,
+    "categoryId": 5,
+    "funcName": "兜底回复",
+    "definition": "当无法理解用户指令时，提供友好的兜底回复，引导用户重新表达。",
+    "demoCommand": "（无法理解时）",
+    "carModels": [
+      {
+        "carModel": "理想L6",
+        "embedUrl": ""
+      },
+      {
+        "carModel": "问界M8",
+        "embedUrl": ""
+      },
+      {
+        "carModel": "银河M9",
+        "embedUrl": ""
+      },
+      {
+        "carModel": "深蓝L06",
+        "embedUrl": ""
+      }
+    ],
+    "sort": 7,
+    "status": 1
+  },
+  {
+    "id": 34,
+    "categoryId": 5,
+    "funcName": "驾驶状态简洁播报",
+    "definition": "在驾驶状态下采用更简洁的播报方式，减少不必要的信息干扰。",
+    "demoCommand": "（自动切换）",
+    "carModels": [
+      {
+        "carModel": "理想L6",
+        "embedUrl": ""
+      },
+      {
+        "carModel": "问界M8",
+        "embedUrl": ""
+      },
+      {
+        "carModel": "银河M9",
+        "embedUrl": ""
+      },
+      {
+        "carModel": "深蓝L06",
+        "embedUrl": ""
+      }
+    ],
+    "sort": 8,
+    "status": 1
+  },
+  {
+    "id": 35,
+    "categoryId": 6,
+    "funcName": "媒体播放",
+    "definition": "支持电台、音乐、视频等媒体内容的语音控制，丰富车内娱乐体验。",
+    "demoCommand": "播放音乐 / 打开电台 / 播放视频",
+    "carModels": [
+      {
+        "carModel": "理想L6",
+        "embedUrl": ""
+      },
+      {
+        "carModel": "问界M8",
+        "embedUrl": ""
+      },
+      {
+        "carModel": "银河M9",
+        "embedUrl": ""
+      },
+      {
+        "carModel": "深蓝L06",
+        "embedUrl": ""
+      }
+    ],
+    "sort": 1,
+    "status": 1
+  },
+  {
+    "id": 36,
+    "categoryId": 6,
+    "funcName": "资讯查询",
+    "definition": "支持天气、新闻、股票、航班、日历等资讯的语音查询服务。",
+    "demoCommand": "今天天气怎么样 / 最近新闻 / 查航班",
+    "carModels": [
+      {
+        "carModel": "理想L6",
+        "embedUrl": ""
+      },
+      {
+        "carModel": "问界M8",
+        "embedUrl": ""
+      },
+      {
+        "carModel": "银河M9",
+        "embedUrl": ""
+      },
+      {
+        "carModel": "深蓝L06",
+        "embedUrl": ""
+      }
+    ],
+    "sort": 2,
+    "status": 1
+  },
+  {
+    "id": 37,
+    "categoryId": 6,
+    "funcName": "导航",
+    "definition": "支持目的地搜索、路线规划、实时导航等全功能语音控制。",
+    "demoCommand": "导航到天安门 / 避开拥堵",
+    "carModels": [
+      {
+        "carModel": "理想L6",
+        "embedUrl": ""
+      },
+      {
+        "carModel": "问界M8",
+        "embedUrl": ""
+      },
+      {
+        "carModel": "银河M9",
+        "embedUrl": ""
+      },
+      {
+        "carModel": "深蓝L06",
+        "embedUrl": ""
+      }
+    ],
+    "sort": 3,
+    "status": 1
+  },
+  {
+    "id": 38,
+    "categoryId": 6,
+    "funcName": "电话",
+    "definition": "支持语音拨号、接听、挂断、回拨等电话功能的语音控制。",
+    "demoCommand": "打电话给张三 / 接听电话",
+    "carModels": [
+      {
+        "carModel": "理想L6",
+        "embedUrl": ""
+      },
+      {
+        "carModel": "问界M8",
+        "embedUrl": ""
+      },
+      {
+        "carModel": "银河M9",
+        "embedUrl": ""
+      },
+      {
+        "carModel": "深蓝L06",
+        "embedUrl": ""
+      }
+    ],
+    "sort": 4,
+    "status": 1
+  },
+  {
+    "id": 39,
+    "categoryId": 6,
+    "funcName": "车控",
+    "definition": "支持车窗、空调、座椅、灯光等整车硬件的语音控制，全量覆盖。",
+    "demoCommand": "打开车窗 / 空调25度 / 座椅加热",
+    "carModels": [
+      {
+        "carModel": "理想L6",
+        "embedUrl": ""
+      },
+      {
+        "carModel": "问界M8",
+        "embedUrl": ""
+      },
+      {
+        "carModel": "银河M9",
+        "embedUrl": ""
+      },
+      {
+        "carModel": "深蓝L06",
+        "embedUrl": ""
+      }
+    ],
+    "sort": 5,
+    "status": 1
+  },
+  {
+    "id": 40,
+    "categoryId": 6,
+    "funcName": "小游戏",
+    "definition": "支持语音控制的车内小游戏，增加驾驶乐趣和互动体验。",
+    "demoCommand": "玩个游戏 / 猜谜",
+    "carModels": [
+      {
+        "carModel": "理想L6",
+        "embedUrl": ""
+      },
+      {
+        "carModel": "问界M8",
+        "embedUrl": ""
+      },
+      {
+        "carModel": "银河M9",
+        "embedUrl": ""
+      },
+      {
+        "carModel": "深蓝L06",
+        "embedUrl": ""
+      }
+    ],
+    "sort": 6,
+    "status": 1
+  },
+  {
+    "id": 41,
+    "categoryId": 6,
+    "funcName": "闲聊",
+    "definition": "支持日常闲聊对话，提供有趣的话题和互动内容。",
+    "demoCommand": "今天心情怎么样 / 讲个笑话",
+    "carModels": [
+      {
+        "carModel": "理想L6",
+        "embedUrl": ""
+      },
+      {
+        "carModel": "问界M8",
+        "embedUrl": ""
+      },
+      {
+        "carModel": "银河M9",
+        "embedUrl": ""
+      },
+      {
+        "carModel": "深蓝L06",
+        "embedUrl": ""
+      }
+    ],
+    "sort": 7,
+    "status": 1
+  },
+  {
+    "id": 42,
+    "categoryId": 6,
+    "funcName": "百科",
+    "definition": "支持百科知识查询，解答用户的各种问题。",
+    "demoCommand": "什么是人工智能 / 长城有多长",
+    "carModels": [
+      {
+        "carModel": "理想L6",
+        "embedUrl": ""
+      },
+      {
+        "carModel": "问界M8",
+        "embedUrl": ""
+      },
+      {
+        "carModel": "银河M9",
+        "embedUrl": ""
+      },
+      {
+        "carModel": "深蓝L06",
+        "embedUrl": ""
+      }
+    ],
+    "sort": 8,
+    "status": 1
+  },
+  {
+    "id": 43,
+    "categoryId": 6,
+    "funcName": "识物",
+    "definition": "支持拍照识物功能，识别物体名称和相关信息。",
+    "demoCommand": "这是什么",
+    "carModels": [
+      {
+        "carModel": "理想L6",
+        "embedUrl": ""
+      },
+      {
+        "carModel": "问界M8",
+        "embedUrl": ""
+      },
+      {
+        "carModel": "银河M9",
+        "embedUrl": ""
+      },
+      {
+        "carModel": "深蓝L06",
+        "embedUrl": ""
+      }
+    ],
+    "sort": 9,
+    "status": 1
+  },
+  {
+    "id": 44,
+    "categoryId": 6,
+    "funcName": "用车手册",
+    "definition": "支持语音查询车辆使用手册，解答用车疑问。",
+    "demoCommand": "怎么换轮胎 / 保养周期是多少",
+    "carModels": [
+      {
+        "carModel": "理想L6",
+        "embedUrl": ""
+      },
+      {
+        "carModel": "问界M8",
+        "embedUrl": ""
+      },
+      {
+        "carModel": "银河M9",
+        "embedUrl": ""
+      },
+      {
+        "carModel": "深蓝L06",
+        "embedUrl": ""
+      }
+    ],
+    "sort": 10,
+    "status": 1
+  },
+  {
+    "id": 45,
+    "categoryId": 6,
+    "funcName": "语音反馈",
+    "definition": "支持语音反馈功能，用户可通过语音提交反馈和建议。",
+    "demoCommand": "反馈一个问题",
+    "carModels": [
+      {
+        "carModel": "理想L6",
+        "embedUrl": ""
+      },
+      {
+        "carModel": "问界M8",
+        "embedUrl": ""
+      },
+      {
+        "carModel": "银河M9",
+        "embedUrl": ""
+      },
+      {
+        "carModel": "深蓝L06",
+        "embedUrl": ""
+      }
+    ],
+    "sort": 11,
+    "status": 1
+  },
+  {
+    "id": 46,
+    "categoryId": 6,
+    "funcName": "语音记事提醒",
+    "definition": "支持语音创建记事和提醒事项，帮助用户记录重要信息。",
+    "demoCommand": "提醒我明天开会 / 创建待办事项",
+    "carModels": [
+      {
+        "carModel": "理想L6",
+        "embedUrl": ""
+      },
+      {
+        "carModel": "问界M8",
+        "embedUrl": ""
+      },
+      {
+        "carModel": "银河M9",
+        "embedUrl": ""
+      },
+      {
+        "carModel": "深蓝L06",
+        "embedUrl": ""
+      }
+    ],
+    "sort": 12,
+    "status": 1
+  },
+  {
+    "id": 47,
+    "categoryId": 6,
+    "funcName": "语音任务创建",
+    "definition": "支持语音创建各种任务，如日程安排、购物清单等。",
+    "demoCommand": "添加购物清单 / 创建日程",
+    "carModels": [
+      {
+        "carModel": "理想L6",
+        "embedUrl": ""
+      },
+      {
+        "carModel": "问界M8",
+        "embedUrl": ""
+      },
+      {
+        "carModel": "银河M9",
+        "embedUrl": ""
+      },
+      {
+        "carModel": "深蓝L06",
+        "embedUrl": ""
+      }
+    ],
+    "sort": 13,
+    "status": 1
+  },
+  {
+    "id": 48,
+    "categoryId": 6,
+    "funcName": "IOT控制",
+    "definition": "支持语音控制智能家居设备，实现车家互联。",
+    "demoCommand": "打开家里的灯 / 关闭空调",
+    "carModels": [
+      {
+        "carModel": "理想L6",
+        "embedUrl": ""
+      },
+      {
+        "carModel": "问界M8",
+        "embedUrl": ""
+      },
+      {
+        "carModel": "银河M9",
+        "embedUrl": ""
+      },
+      {
+        "carModel": "深蓝L06",
+        "embedUrl": ""
+      }
+    ],
+    "sort": 14,
+    "status": 1
+  },
+  {
+    "id": 49,
+    "categoryId": 6,
+    "funcName": "上车问候",
+    "definition": "智能上车问候功能，根据时间、天气等信息提供个性化问候。",
+    "demoCommand": "（自动问候）",
+    "carModels": [
+      {
+        "carModel": "理想L6",
+        "embedUrl": ""
+      },
+      {
+        "carModel": "问界M8",
+        "embedUrl": ""
+      },
+      {
+        "carModel": "银河M9",
+        "embedUrl": ""
+      },
+      {
+        "carModel": "深蓝L06",
+        "embedUrl": ""
+      }
+    ],
+    "sort": 15,
+    "status": 1
+  },
+  {
+    "id": 50,
+    "categoryId": 7,
+    "funcName": "实况关怀",
+    "definition": "实时关注车辆状态和驾驶环境，提供贴心关怀提醒。",
+    "demoCommand": "（自动提醒）",
+    "carModels": [
+      {
+        "carModel": "理想L6",
+        "embedUrl": ""
+      },
+      {
+        "carModel": "问界M8",
+        "embedUrl": ""
+      },
+      {
+        "carModel": "银河M9",
+        "embedUrl": ""
+      },
+      {
+        "carModel": "深蓝L06",
+        "embedUrl": ""
+      }
+    ],
+    "sort": 1,
+    "status": 1
+  },
+  {
+    "id": 51,
+    "categoryId": 7,
+    "funcName": "离车提醒",
+    "definition": "检测到用户离车时，提醒用户带走物品或关闭设备。",
+    "demoCommand": "（自动提醒）",
+    "carModels": [
+      {
+        "carModel": "理想L6",
+        "embedUrl": ""
+      },
+      {
+        "carModel": "问界M8",
+        "embedUrl": ""
+      },
+      {
+        "carModel": "银河M9",
+        "embedUrl": ""
+      },
+      {
+        "carModel": "深蓝L06",
+        "embedUrl": ""
+      }
+    ],
+    "sort": 2,
+    "status": 1
+  },
+  {
+    "id": 52,
+    "categoryId": 7,
+    "funcName": "后排遗忘提醒",
+    "definition": "检测后排乘客下车情况，防止儿童或物品被遗忘在车内。",
+    "demoCommand": "（自动提醒）",
+    "carModels": [
+      {
+        "carModel": "理想L6",
+        "embedUrl": ""
+      },
+      {
+        "carModel": "问界M8",
+        "embedUrl": ""
+      },
+      {
+        "carModel": "银河M9",
+        "embedUrl": ""
+      },
+      {
+        "carModel": "深蓝L06",
+        "embedUrl": ""
+      }
+    ],
+    "sort": 3,
+    "status": 1
+  },
+  {
+    "id": 53,
+    "categoryId": 7,
+    "funcName": "疲劳驾驶提醒",
+    "definition": "通过面部识别技术监测驾驶员状态，检测到疲劳时主动提醒休息。",
+    "demoCommand": "（自动提醒）",
+    "carModels": [
+      {
+        "carModel": "理想L6",
+        "embedUrl": ""
+      },
+      {
+        "carModel": "问界M8",
+        "embedUrl": ""
+      },
+      {
+        "carModel": "银河M9",
+        "embedUrl": ""
+      },
+      {
+        "carModel": "深蓝L06",
+        "embedUrl": ""
+      }
+    ],
+    "sort": 4,
+    "status": 1
+  },
+  {
+    "id": 54,
+    "categoryId": 7,
+    "funcName": "美食推荐",
+    "definition": "基于当前位置和偏好，智能推荐附近美食餐厅。",
+    "demoCommand": "（自动推荐）",
+    "carModels": [
+      {
+        "carModel": "理想L6",
+        "embedUrl": ""
+      },
+      {
+        "carModel": "问界M8",
+        "embedUrl": ""
+      },
+      {
+        "carModel": "银河M9",
+        "embedUrl": ""
+      },
+      {
+        "carModel": "深蓝L06",
+        "embedUrl": ""
+      }
+    ],
+    "sort": 5,
+    "status": 1
+  },
+  {
+    "id": 55,
+    "categoryId": 7,
+    "funcName": "停车推荐",
+    "definition": "根据目的地智能推荐附近停车场，方便用户停车。",
+    "demoCommand": "（自动推荐）",
+    "carModels": [
+      {
+        "carModel": "理想L6",
+        "embedUrl": ""
+      },
+      {
+        "carModel": "问界M8",
+        "embedUrl": ""
+      },
+      {
+        "carModel": "银河M9",
+        "embedUrl": ""
+      },
+      {
+        "carModel": "深蓝L06",
+        "embedUrl": ""
+      }
+    ],
+    "sort": 6,
+    "status": 1
+  },
+  {
+    "id": 56,
+    "categoryId": 7,
+    "funcName": "旅行推荐",
+    "definition": "根据行程和兴趣，智能推荐旅游景点和路线。",
+    "demoCommand": "（自动推荐）",
+    "carModels": [
+      {
+        "carModel": "理想L6",
+        "embedUrl": ""
+      },
+      {
+        "carModel": "问界M8",
+        "embedUrl": ""
+      },
+      {
+        "carModel": "银河M9",
+        "embedUrl": ""
+      },
+      {
+        "carModel": "深蓝L06",
+        "embedUrl": ""
+      }
+    ],
+    "sort": 7,
+    "status": 1
+  },
+  {
+    "id": 57,
+    "categoryId": 7,
+    "funcName": "续航提醒",
+    "definition": "实时监测电量或油量，适时提醒用户充电或加油。",
+    "demoCommand": "（自动提醒）",
+    "carModels": [
+      {
+        "carModel": "理想L6",
+        "embedUrl": ""
+      },
+      {
+        "carModel": "问界M8",
+        "embedUrl": ""
+      },
+      {
+        "carModel": "银河M9",
+        "embedUrl": ""
+      },
+      {
+        "carModel": "深蓝L06",
+        "embedUrl": ""
+      }
+    ],
+    "sort": 8,
+    "status": 1
+  },
+  {
+    "id": 58,
+    "categoryId": 7,
+    "funcName": "故障提醒",
+    "definition": "实时监测车辆状态，发现故障或异常时及时提醒用户。",
+    "demoCommand": "（自动提醒）",
+    "carModels": [
+      {
+        "carModel": "理想L6",
+        "embedUrl": ""
+      },
+      {
+        "carModel": "问界M8",
+        "embedUrl": ""
+      },
+      {
+        "carModel": "银河M9",
+        "embedUrl": ""
+      },
+      {
+        "carModel": "深蓝L06",
+        "embedUrl": ""
+      }
+    ],
+    "sort": 9,
     "status": 1
   }
 ]

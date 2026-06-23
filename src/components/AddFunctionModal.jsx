@@ -6,8 +6,6 @@ export default function AddFunctionModal({ isOpen, onClose, categoryId, onAdd })
   const [funcName, setFuncName] = useState("");
   const [definition, setDefinition] = useState("");
   const [demoCommand, setDemoCommand] = useState("");
-  const [videoUrl, setVideoUrl] = useState("");
-  const [videoCover, setVideoCover] = useState("");
 
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -19,16 +17,11 @@ export default function AddFunctionModal({ isOpen, onClose, categoryId, onAdd })
       name: funcName.trim(),
       definition: definition.trim(),
       demoCommand: demoCommand.trim(),
-      videoUrl: videoUrl.trim(),
-      videoCover: videoCover.trim(),
-      carModels: [], // 初始化为空，后续可通过 AddVideoModal 添加
+      carModels: [],
     });
-    // 清空表单
     setFuncName("");
     setDefinition("");
     setDemoCommand("");
-    setVideoUrl("");
-    setVideoCover("");
     onClose();
   };
 
@@ -84,32 +77,6 @@ export default function AddFunctionModal({ isOpen, onClose, categoryId, onAdd })
                 value={demoCommand}
                 onChange={(e) => setDemoCommand(e.target.value)}
                 placeholder='例如："导航到公司"'
-                className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent"
-              />
-            </div>
-
-            <div>
-              <label className="block text-sm font-medium text-gray-700 mb-1">
-                视频地址
-              </label>
-              <input
-                type="text"
-                value={videoUrl}
-                onChange={(e) => setVideoUrl(e.target.value)}
-                placeholder="例如：/videos/demo.mp4"
-                className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent"
-              />
-            </div>
-
-            <div>
-              <label className="block text-sm font-medium text-gray-700 mb-1">
-                封面地址
-              </label>
-              <input
-                type="text"
-                value={videoCover}
-                onChange={(e) => setVideoCover(e.target.value)}
-                placeholder="例如：/images/cover.jpg"
                 className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent"
               />
             </div>

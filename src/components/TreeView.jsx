@@ -5,7 +5,7 @@ import { useState, useCallback } from "react";
 // 图标组件
 const ChevronIcon = ({ isOpen, className = "" }) => (
   <svg
-    className={`w-4 h-4 transition-transform duration-200 ${
+    className={`w-4 h-4 text-white transition-transform duration-200 ${
       isOpen ? "rotate-90" : ""
     } ${className}`}
     fill="none"
@@ -24,7 +24,7 @@ const ChevronIcon = ({ isOpen, className = "" }) => (
 const FolderIcon = ({ isOpen }) => (
   <svg
     className="w-5 h-5 text-blue-500"
-    fill={isOpen ? "currentColor" : "none"}
+    fill={isOpen ? "none" : "currentColor"}
     stroke="currentColor"
     viewBox="0 0 24 24"
   >
@@ -86,31 +86,19 @@ function CategoryNode({ category, functions, selectedFuncId, onSelect, onAddFunc
         >
           <ChevronIcon isOpen={isExpanded} />
           <FolderIcon isOpen={isExpanded} />
-          <span className="flex-1 text-sm font-medium truncate text-gray-700">
+          <span className="flex-1 text-sm font-medium truncate text-white">
             {category.name}
           </span>
-          <span className="text-xs text-gray-400 bg-gray-100 px-2 py-0.5 rounded-full">
+          <span className="text-xs text-gray-300 bg-gray-700 px-2 py-0.5 rounded-full">
             {categoryFunctions.length}
           </span>
-        </button>
-
-        {/* 新增功能按钮 */}
-        <button
-          onClick={(e) => {
-            e.stopPropagation();
-            onAddFunction && onAddFunction(category.id);
-          }}
-          className="opacity-0 group-hover:opacity-100 p-1 rounded hover:bg-blue-100 text-blue-500 transition-all duration-200"
-          title="新增功能"
-        >
-          <PlusIcon />
         </button>
       </div>
 
       {/* 功能列表 */}
       <div
         className={`overflow-hidden transition-all duration-300 ease-in-out ${
-          isExpanded ? "max-h-96 opacity-100" : "max-h-0 opacity-0"
+          isExpanded ? "max-h-none opacity-100" : "max-h-0 opacity-0"
         }`}
       >
         <div className="ml-4 pl-2 border-l-2 border-gray-200 py-1 space-y-1">
@@ -123,12 +111,12 @@ function CategoryNode({ category, functions, selectedFuncId, onSelect, onAddFunc
               className={`w-full flex items-center gap-2 px-3 py-1.5 rounded-md text-sm 
                          text-left transition-all duration-150
                          ${func.id === selectedFuncId
-                           ? "bg-blue-50 text-blue-600 font-semibold"
-                           : "text-gray-600 hover:bg-gray-50 hover:text-gray-800"
-                         }`}
+                          ? "bg-blue-600 text-white font-semibold"
+                          : "text-gray-300 hover:bg-gray-700 hover:text-white"
+                        }`}
             >
               <FuncIcon />
-              <span className="truncate flex-1">{func.funcName || func.name}</span>
+              <span className="truncate flex-1 text-white">{func.funcName || func.name}</span>
             </button>
           ))}
         </div>
@@ -158,7 +146,7 @@ export default function TreeView({ categories, functions, onSelectFunction, sele
     <div className="flex flex-col h-full">
       {/* 头部 */}
       <div className="p-4 bg-gradient-to-r from-blue-600 to-blue-700 text-white">
-        <div className="flex items-center justify-between mb-3">
+        <div className="flex items-center mb-3">
           <div className="flex items-center gap-2">
             <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path
@@ -170,15 +158,6 @@ export default function TreeView({ categories, functions, onSelectFunction, sele
             </svg>
             <h2 className="text-lg font-bold">功能导航</h2>
           </div>
-
-          {/* 新增分类按钮 */}
-          <button
-            onClick={() => onAddCategory && onAddCategory()}
-            className="p-2 rounded-lg bg-white/20 hover:bg-white/30 transition-all duration-200"
-            title="新增分类"
-          >
-            <PlusIcon />
-          </button>
         </div>
         
         {/* 搜索框 */}
@@ -209,7 +188,7 @@ export default function TreeView({ categories, functions, onSelectFunction, sele
       </div>
 
       {/* 树状内容 - 显示所有功能 */}
-      <nav className="flex-1 overflow-y-auto p-3">
+      <nav className="flex-1 overflow-y-auto p-3 bg-gray-900">
         {filteredCategories.map((category) => (
           <CategoryNode
             key={category.id}
@@ -237,8 +216,8 @@ export default function TreeView({ categories, functions, onSelectFunction, sele
       </nav>
 
       {/* 底部统计 */}
-      <div className="p-3 bg-gray-50 border-t border-gray-200">
-        <div className="flex items-center justify-between text-xs text-gray-500">
+      <div className="p-3 bg-gray-800 border-t border-gray-700">
+        <div className="flex items-center justify-between text-xs text-gray-400">
           <span>共 {categories.length} 个分类</span>
           <span>共 {functions.length} 个功能</span>
         </div>

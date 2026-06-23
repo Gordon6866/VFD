@@ -125,22 +125,56 @@ function CategoryNode({ category, functions, selectedFuncId, onSelect, onAddFunc
   );
 }
 
+// 计算功能匹配权重
+const getMatchWeight = (func, searchTerm) => {
+  let weight = 0;
+  const funcName = func.funcName || func.name;
+  
+  if (funcName?.includes(searchTerm)) {
+    weight += 10;
+    if (funcName.toLowerCase().startsWith(searchTerm.toLowerCase())) {
+      weight += 5;
+    }
+  }
+  if (func.definition?.includes(searchTerm)) {
+    weight += 1;
+  }
+  return weight;
+};
+
 // 主 TreeView 组件
 export default function TreeView({ categories, functions, onSelectFunction, selectedFuncId, onAddCategory, onAddFunction }) {
   const [searchFilter, setSearchFilter] = useState("");
 
-  const filteredCategories = categories.filter((cat) => {
-    if (!searchFilter) return true;
-    const catFunctions = functions.filter((f) => f.categoryId === cat.id);
-    return (
-      cat.name.includes(searchFilter) ||
-      catFunctions.some(
-        (f) =>
-          (f.funcName || f.name)?.includes(searchFilter) ||
-          f.definition?.includes(searchFilter)
-      )
-    );
-  });
+  const processCategories = () => {
+    if (!searchFilter) {
+      return categories.map(cat => ({
+        ...cat,
+        functions: functions.filter(f => f.categoryId === cat.id)
+      }));
+    }
+
+    return categories
+      .map(cat => {
+        const catFunctions = functions.filter(f => f.categoryId === cat.id);
+        const matchedFunctions = catFunctions
+          .map(func => ({
+            ...func,
+            matchWeight: getMatchWeight(func, searchFilter)
+          }))
+          .filter(func => func.matchWeight > 0)
+          .sort((a, b) => b.matchWeight - a.matchWeight);
+        
+        return {
+          ...cat,
+          functions: matchedFunctions,
+          hasMatch: cat.name.includes(searchFilter) || matchedFunctions.length > 0
+        };
+      })
+      .filter(cat => cat.hasMatch);
+  };
+
+  const processedCategories = processCategories();
 
   return (
     <div className="flex flex-col h-full">
@@ -180,27 +214,39 @@ export default function TreeView({ categories, functions, onSelectFunction, sele
             placeholder="搜索功能..."
             value={searchFilter}
             onChange={(e) => setSearchFilter(e.target.value)}
-            className="w-full pl-10 pr-4 py-2 rounded-lg bg-blue-500/20 text-white 
+            className="w-full pl-10 pr-10 py-2 rounded-lg bg-blue-500/20 text-white 
                        placeholder-blue-200 text-sm focus:outline-none focus:bg-blue-500/30 
                        transition border-none"
           />
+          {searchFilter && (
+            <button
+              onClick={() => setSearchFilter("")}
+              className="absolute right-3 top-1/2 -translate-y-1/2 w-5 h-5 flex items-center justify-center
+                         text-blue-300 hover:text-white transition-colors"
+              title="清除搜索"
+            >
+              <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
+              </svg>
+            </button>
+          )}
         </div>
       </div>
 
       {/* 树状内容 - 显示所有功能 */}
       <nav className="flex-1 overflow-y-auto p-3 bg-gray-900">
-        {filteredCategories.map((category) => (
+        {processedCategories.map((category) => (
           <CategoryNode
             key={category.id}
             category={category}
-            functions={functions}
+            functions={category.functions}
             selectedFuncId={selectedFuncId}
             onSelect={onSelectFunction}
             onAddFunction={onAddFunction}
           />
         ))}
 
-        {filteredCategories.length === 0 && (
+        {processedCategories.length === 0 && (
           <div className="text-center py-8 text-gray-400">
             <svg className="w-12 h-12 mx-auto mb-3 text-gray-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path

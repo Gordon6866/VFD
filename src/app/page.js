@@ -125,9 +125,9 @@ export default function HomePage() {
                   {/* 示例指令 */}
                   {selectedFunc.demoCommand && (
                     <div className="p-5 rounded-xl bg-gradient-to-r from-blue-600/90 to-blue-700/90 shadow-lg">
-                      <div className="flex items-start gap-4">
-                        <div className="w-10 h-10 rounded-lg bg-white/20 flex items-center justify-center flex-shrink-0">
-                          <svg className="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <div className="flex items-center gap-4">
+                        <div className="w-12 h-12 rounded-xl bg-white/15 flex items-center justify-center flex-shrink-0 border border-white/20">
+                          <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path
                               strokeLinecap="round"
                               strokeLinejoin="round"
@@ -136,11 +136,11 @@ export default function HomePage() {
                             />
                           </svg>
                         </div>
-                        <div>
-                          <div className="text-xs text-blue-200 font-semibold uppercase tracking-wide mb-2">
+                        <div className="flex-1 min-w-0">
+                          <div className="text-xs text-blue-200 font-semibold uppercase tracking-wide mb-1.5">
                             示例指令
                           </div>
-                          <div className="text-white font-medium text-lg">
+                          <div className="text-white font-medium text-lg leading-relaxed break-words">
                             "{selectedFunc.demoCommand}"
                           </div>
                         </div>

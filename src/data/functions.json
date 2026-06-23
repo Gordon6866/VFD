@@ -2,8 +2,8 @@
   {
     "id": 1,
     "categoryId": 1,
-    "funcName": "拾音降噪",
-    "definition": "采用先进的声学算法，有效降低车内环境噪音和道路噪音，提升语音识别准确率和通话质量。",
+    "funcName": "车载拾音降噪",
+    "definition": "针对行车风噪、路噪、胎噪、空调噪音等复杂车载环境，通过声学算法对拾取的人声进行降噪优化，过滤环境干扰杂音，清晰提取有效人声信号，大幅提升行车过程中语音交互的识别准确率，适配低速、高速、开窗等全行车场景。",
     "demoCommand": "（自动生效）",
     "carModels": [
       {
@@ -29,9 +29,9 @@
   {
     "id": 2,
     "categoryId": 1,
-    "funcName": "多音区VAD",
-    "definition": "支持多音区语音活动检测，精准识别车内不同位置的语音输入，实现分区响应。",
-    "demoCommand": "打开车窗",
+    "funcName": "多音区语音活动检测",
+    "definition": "支持主驾、副驾、后排多座位独立音区检测，精准判断发声用户的座位位置，区分有效人声与环境杂音、背景交谈声，仅响应车内有效指令人声，杜绝无效唤醒与误识别，实现分音区精准交互。",
+    "demoCommand": "打开我这边的车窗",
     "carModels": [
       {
         "carModel": "理想L6",
@@ -56,9 +56,9 @@
   {
     "id": 3,
     "categoryId": 2,
-    "funcName": "免唤醒/全时对话",
-    "definition": "小鹏全时对话技术，无需唤醒词即可随时与车机对话，打造自然流畅的交互体验。",
-    "demoCommand": "打开空调 / 导航回家",
+    "funcName": "全时免唤醒对话",
+    "definition": "行业通用持续对话能力，无需每次下达指令前重复唤醒，语音助手长期处于待命状态，支持连续下发多条指令，适配高频车载操作场景，大幅简化交互流程。",
+    "demoCommand": "打开空调 / 播放音乐 / 调低音量",
     "carModels": [
       {
         "carModel": "理想L6",
@@ -83,9 +83,9 @@
   {
     "id": 4,
     "categoryId": 2,
-    "funcName": "按钮唤醒",
-    "definition": "支持物理按键和虚拟按键两种唤醒方式，一键快速激活语音助手。",
-    "demoCommand": "（按语音键）",
+    "funcName": "按键/虚拟按键唤醒",
+    "definition": "支持物理方向盘按键、中控屏虚拟按键两种手动触发方式，一键唤醒语音助手，适用于用户不想语音唤醒、规避误触发的场景，补充语音唤醒的交互方式。",
+    "demoCommand": "（点击方向盘按键）",
     "carModels": [
       {
         "carModel": "理想L6",
@@ -110,9 +110,9 @@
   {
     "id": 5,
     "categoryId": 2,
-    "funcName": "唤醒词自定义",
-    "definition": "支持用户自定义唤醒词，打造专属的语音交互体验，支持多种个性化唤醒词。",
-    "demoCommand": "设置唤醒词为你好小鹏",
+    "funcName": "自定义唤醒词",
+    "definition": "支持用户自主修改、录制、设置专属语音唤醒词，替代系统默认唤醒词，满足用户个性化使用习惯，同时支持唤醒词重置、恢复默认。",
+    "demoCommand": "设置唤醒词为'小助手'",
     "carModels": [
       {
         "carModel": "理想L6",
@@ -137,9 +137,9 @@
   {
     "id": 6,
     "categoryId": 2,
-    "funcName": "One-shot",
-    "definition": "支持前置和后置One-shot模式，用户可在唤醒词后直接说出指令，无需等待响应。",
-    "demoCommand": "你好小P打开空调",
+    "funcName": "One-shot一键式语音交互",
+    "definition": "行业标准交互能力，支持前唤醒词+指令连读、指令结束后接续交互两种模式，无需等待助手唤醒应答完毕即可直接下达操作指令，缩短交互等待时长，实现秒级响应。",
+    "demoCommand": "理想同学，打开空调",
     "carModels": [
       {
         "carModel": "理想L6",
@@ -164,9 +164,9 @@
   {
     "id": 7,
     "categoryId": 2,
-    "funcName": "自定义唤醒回复语",
-    "definition": "支持用户自定义唤醒回复语和响应方式，打造个性化的语音助手形象。",
-    "demoCommand": "设置唤醒回复为你好",
+    "funcName": "自定义唤醒响应",
+    "definition": "支持用户自定义助手唤醒后的回复话术、响应动画、提示音效，打造个性化助手交互体验，告别固定机械回复。",
+    "demoCommand": "设置唤醒语为'我在'",
     "carModels": [
       {
         "carModel": "理想L6",
@@ -191,8 +191,8 @@
   {
     "id": 8,
     "categoryId": 2,
-    "funcName": "声纹识别",
-    "definition": "支持声纹识别功能，可识别不同用户的声音，实现个性化服务和权限管理。",
+    "funcName": "声纹身份识别",
+    "definition": "通过声纹特征区分车内不同用户身份，识别主驾、家人、陌生人员，可实现权限区分（如仅主驾可控制车辆核心设置）、个性化偏好适配、隐私内容保护。",
     "demoCommand": "（自动识别）",
     "carModels": [
       {
@@ -217,10 +217,10 @@
   },
   {
     "id": 9,
-    "categoryId": 3,
-    "funcName": "语音形象IP",
-    "definition": "提供可爱的抽象语音形象IP，通过生动的视觉反馈增强语音交互的趣味性和亲和力。",
-    "demoCommand": "（自动显示）",
+    "categoryId": 4,
+    "funcName": "多方言/多语种识别",
+    "definition": "兼容全国主流方言（粤语、四川话、东北话等）及主流外语语音识别，打破语言限制，适配不同地域、外籍用户的交互需求，无语言门槛操作车机。",
+    "demoCommand": "用粤语说：打开空调",
     "carModels": [
       {
         "carModel": "理想L6",
@@ -244,10 +244,10 @@
   },
   {
     "id": 10,
-    "categoryId": 3,
-    "funcName": "语音形象自定义",
-    "definition": "支持用户自定义语音形象的外观、颜色、动画等，打造专属的语音助手形象。",
-    "demoCommand": "设置语音形象为卡通风格",
+    "categoryId": 4,
+    "funcName": "模糊语义识别",
+    "definition": "无需用户严格标准话术，支持口语化、不规范、模糊化指令表达，系统可智能解析用户真实操作意图，适配日常口语交流习惯，降低用户操作学习成本。",
+    "demoCommand": "去那个地方",
     "carModels": [
       {
         "carModel": "理想L6",
@@ -271,10 +271,10 @@
   },
   {
     "id": 11,
-    "categoryId": 3,
-    "funcName": "表情动作同步",
-    "definition": "语音形象的表情和动作与语音内容同步，增强交互的生动性和情感表达。",
-    "demoCommand": "（自动同步）",
+    "categoryId": 4,
+    "funcName": "全双工语音打断",
+    "definition": "支持双向实时语音交互，助手播报过程中用户可随时插话、打断播报，分为两层能力：声学打断（识别到人声自动暂停播报）、语义打断（识别有效指令主动响应，过滤无效杂音插话），交互更自然流畅。",
+    "demoCommand": "（打断播报）我想换首歌",
     "carModels": [
       {
         "carModel": "理想L6",
@@ -298,10 +298,10 @@
   },
   {
     "id": 12,
-    "categoryId": 3,
-    "funcName": "多模态交互-静音手势",
-    "definition": "支持静音手势操作，通过特定手势实现静音、暂停等功能，无需语音指令。",
-    "demoCommand": "（挥手静音）",
+    "categoryId": 4,
+    "funcName": "智能拒识过滤",
+    "definition": "包含语义拒识与多模态拒识，可智能识别闲聊废话、错误指令、恶意指令、环境误触发语音，自动拒绝执行无效、违规操作，避免车辆误操作，提升交互安全性。",
+    "demoCommand": "（自动过滤无效指令）",
     "carModels": [
       {
         "carModel": "理想L6",
@@ -325,10 +325,10 @@
   },
   {
     "id": 13,
-    "categoryId": 3,
-    "funcName": "多模态交互-视线追踪",
-    "definition": "基于视线追踪技术的语音融合交互，根据用户视线自动调整交互方式。",
-    "demoCommand": "（自动检测视线）",
+    "categoryId": 4,
+    "funcName": "多人自由对话交互",
+    "definition": "兼容车内多人同时发声、轮流对话场景，系统可精准区分不同用户指令、有序响应多条需求，支持多人无顺序自由下发语音指令，适配多人乘车交互场景。",
+    "demoCommand": "主驾：打开空调 / 副驾：播放音乐",
     "carModels": [
       {
         "carModel": "理想L6",
@@ -352,10 +352,10 @@
   },
   {
     "id": 14,
-    "categoryId": 3,
-    "funcName": "多模态交互-手势融合",
-    "definition": "支持基于手势的语音融合交互，手势操作与语音指令无缝结合。",
-    "demoCommand": "（手势+语音）",
+    "categoryId": 4,
+    "funcName": "多轮连续对话",
+    "definition": "单次唤醒后支持连续多轮指令交互，无需重复唤醒，可连续完成多项操作，适配连贯式用车操作需求，提升交互效率。",
+    "demoCommand": "打开空调 / 温度调高一点 / 打开音乐",
     "carModels": [
       {
         "carModel": "理想L6",
@@ -380,171 +380,9 @@
   {
     "id": 15,
     "categoryId": 4,
-    "funcName": "方言支持",
-    "definition": "支持多种方言和外语识别，满足不同地区用户的语音交互需求。",
-    "demoCommand": "用四川话说打开空调",
-    "carModels": [
-      {
-        "carModel": "理想L6",
-        "embedUrl": ""
-      },
-      {
-        "carModel": "问界M8",
-        "embedUrl": ""
-      },
-      {
-        "carModel": "银河M9",
-        "embedUrl": ""
-      },
-      {
-        "carModel": "深蓝L06",
-        "embedUrl": ""
-      }
-    ],
-    "sort": 1,
-    "status": 1
-  },
-  {
-    "id": 16,
-    "categoryId": 4,
-    "funcName": "模糊指令",
-    "definition": "支持模糊语义理解，即使指令表达不完整或不准确也能正确识别意图。",
-    "demoCommand": "有点热",
-    "carModels": [
-      {
-        "carModel": "理想L6",
-        "embedUrl": ""
-      },
-      {
-        "carModel": "问界M8",
-        "embedUrl": ""
-      },
-      {
-        "carModel": "银河M9",
-        "embedUrl": ""
-      },
-      {
-        "carModel": "深蓝L06",
-        "embedUrl": ""
-      }
-    ],
-    "sort": 2,
-    "status": 1
-  },
-  {
-    "id": 17,
-    "categoryId": 4,
-    "funcName": "全双工-打断",
-    "definition": "支持声学打断和语义打断，用户可随时打断系统回复，实现自然流畅的对话体验。",
-    "demoCommand": "系统说话时直接说出新指令",
-    "carModels": [
-      {
-        "carModel": "理想L6",
-        "embedUrl": ""
-      },
-      {
-        "carModel": "问界M8",
-        "embedUrl": ""
-      },
-      {
-        "carModel": "银河M9",
-        "embedUrl": ""
-      },
-      {
-        "carModel": "深蓝L06",
-        "embedUrl": ""
-      }
-    ],
-    "sort": 3,
-    "status": 1
-  },
-  {
-    "id": 18,
-    "categoryId": 4,
-    "funcName": "语义拒识",
-    "definition": "智能识别无效指令并礼貌拒绝，避免误操作，支持多模态拒识方式。",
-    "demoCommand": "无效指令",
-    "carModels": [
-      {
-        "carModel": "理想L6",
-        "embedUrl": ""
-      },
-      {
-        "carModel": "问界M8",
-        "embedUrl": ""
-      },
-      {
-        "carModel": "银河M9",
-        "embedUrl": ""
-      },
-      {
-        "carModel": "深蓝L06",
-        "embedUrl": ""
-      }
-    ],
-    "sort": 4,
-    "status": 1
-  },
-  {
-    "id": 19,
-    "categoryId": 4,
-    "funcName": "多人自由说",
-    "definition": "源自蔚来的多人自由说技术，支持车内多人同时对话，系统自动识别说话人。",
-    "demoCommand": "多人同时对话",
-    "carModels": [
-      {
-        "carModel": "理想L6",
-        "embedUrl": ""
-      },
-      {
-        "carModel": "问界M8",
-        "embedUrl": ""
-      },
-      {
-        "carModel": "银河M9",
-        "embedUrl": ""
-      },
-      {
-        "carModel": "深蓝L06",
-        "embedUrl": ""
-      }
-    ],
-    "sort": 5,
-    "status": 1
-  },
-  {
-    "id": 20,
-    "categoryId": 4,
-    "funcName": "连续对话",
-    "definition": "支持多轮对话上下文理解，用户无需重复唤醒，可连续发出多条指令。",
-    "demoCommand": "导航到公司 / 走高速 / 避开拥堵",
-    "carModels": [
-      {
-        "carModel": "理想L6",
-        "embedUrl": ""
-      },
-      {
-        "carModel": "问界M8",
-        "embedUrl": ""
-      },
-      {
-        "carModel": "银河M9",
-        "embedUrl": ""
-      },
-      {
-        "carModel": "深蓝L06",
-        "embedUrl": ""
-      }
-    ],
-    "sort": 6,
-    "status": 1
-  },
-  {
-    "id": 21,
-    "categoryId": 4,
-    "funcName": "上下文指代",
-    "definition": "支持上下文指代理解，能够正确解析代词、省略等语言现象，实现自然对话。",
-    "demoCommand": "导航到公司 / 那里有停车场吗",
+    "funcName": "上下文智能关联",
+    "definition": "支持对话上下文记忆与指代理解，用户后续指令可省略重复主语、场景、对象，系统依托上一轮对话内容精准识别需求；同时支持跨音区上下文关联，主驾、副驾接续对话可无缝衔接，不中断对话逻辑。",
+    "demoCommand": "打开空调 / 把它调到26度",
     "carModels": [
       {
         "carModel": "理想L6",
@@ -567,11 +405,11 @@
     "status": 1
   },
   {
-    "id": 22,
+    "id": 16,
     "categoryId": 4,
-    "funcName": "跨音区上下文关联",
-    "definition": "支持跨音区的上下文关联，不同座位的对话内容可以相互关联和引用。",
-    "demoCommand": "主驾：导航到公园 / 副驾：那里好玩吗",
+    "funcName": "复合多意图指令识别",
+    "definition": "支持单条语音包含多个操作指令，可一次性解析并执行多项不同功能，例如“打开空调并播放音乐、调低音量”，无需分多次指令操作，高效完成复合操作。",
+    "demoCommand": "打开空调并播放音乐，调低音量",
     "carModels": [
       {
         "carModel": "理想L6",
@@ -594,11 +432,11 @@
     "status": 1
   },
   {
-    "id": 23,
+    "id": 17,
     "categoryId": 4,
-    "funcName": "多意复合图指令",
-    "definition": "支持复杂的多意图复合指令，一次语音可包含多个操作意图。",
-    "demoCommand": "打开空调并播放音乐",
+    "funcName": "可见即可说",
+    "definition": "行业标配核心能力，车机屏幕显示的文字、按钮、菜单、功能选项，均可直接语音点击、打开、切换，无需手动触控，所见即可语音操作，适配行车安全操作需求。",
+    "demoCommand": "点击设置 / 打开蓝牙",
     "carModels": [
       {
         "carModel": "理想L6",
@@ -621,11 +459,11 @@
     "status": 1
   },
   {
-    "id": 24,
+    "id": 18,
     "categoryId": 4,
-    "funcName": "可见即可说",
-    "definition": "屏幕上可见的功能按钮、菜单项均可通过语音指令操作，实现全界面语音控制。",
-    "demoCommand": "点击空调 / 打开设置",
+    "funcName": "智能引导澄清",
+    "definition": "当用户指令模糊、意图不明确、指令缺失关键信息时，助手不会误判，将主动弹窗+语音引导用户补充信息、确认需求，保障指令精准执行。",
+    "demoCommand": "导航去公司（系统：请问你想去哪个公司？）",
     "carModels": [
       {
         "carModel": "理想L6",
@@ -648,15 +486,15 @@
     "status": 1
   },
   {
-    "id": 25,
+    "id": 19,
     "categoryId": 4,
-    "funcName": "引导澄清",
-    "definition": "当指令不明确时，系统主动引导用户澄清，确保正确理解用户意图。",
-    "demoCommand": "去那个地方（系统：请问你想去哪里？）",
+    "funcName": "智能聆听等待",
+    "definition": "用户说话停顿、短暂思考时，系统不会立即结束聆听状态，保持待命等待用户接续说完指令，避免语音截断、指令识别不完整的问题。",
+    "demoCommand": "（自动等待）",
     "carModels": [
       {
         "carModel": "理想L6",
-        "embedUrl": "https://foxconn.sharepoint.com/sites/msteams_809b30_201831-Off-Board/_layouts/15/embed.aspx?UniqueId=20a16d83-fffe-4dfd-b6d2-c3c169f42862&embed=%7B%22ust%22%3Atrue%2C%22hv%22%3A%22CopyEmbedCode%22%7D&referrer=StreamWebApp&referrerScenario=EmbedDialog.Create"
+        "embedUrl": ""
       },
       {
         "carModel": "问界M8",
@@ -675,38 +513,11 @@
     "status": 1
   },
   {
-    "id": 26,
-    "categoryId": 4,
-    "funcName": "聆听等待",
-    "definition": "智能判断用户是否说完，在合适时机开始响应，避免打断用户说话。",
-    "demoCommand": "（自动检测）",
-    "carModels": [
-      {
-        "carModel": "理想L6",
-        "embedUrl": ""
-      },
-      {
-        "carModel": "问界M8",
-        "embedUrl": ""
-      },
-      {
-        "carModel": "银河M9",
-        "embedUrl": ""
-      },
-      {
-        "carModel": "深蓝L06",
-        "embedUrl": ""
-      }
-    ],
-    "sort": 12,
-    "status": 1
-  },
-  {
-    "id": 27,
+    "id": 20,
     "categoryId": 5,
-    "funcName": "多音色自定义",
-    "definition": "支持多种音色选择和自定义，用户可根据喜好设置语音助手的声音。",
-    "demoCommand": "设置声音为温柔女声",
+    "funcName": "自定义音色音效",
+    "definition": "提供多套系统音色可选，支持用户自主调节语音音调、语速、音量，自定义专属播报音效，适配个人听觉偏好。",
+    "demoCommand": "设置语速快一点",
     "carModels": [
       {
         "carModel": "理想L6",
@@ -729,11 +540,11 @@
     "status": 1
   },
   {
-    "id": 28,
+    "id": 21,
     "categoryId": 5,
-    "funcName": "MBTI人设",
-    "definition": "支持MBTI人设设定，语音助手的性格和语气可根据用户偏好进行调整。",
-    "demoCommand": "设置为人格类型INTJ",
+    "funcName": "MBTI人设语音",
+    "definition": "高阶个性化语音能力，搭载不同MBTI人格风格语音人设，匹配对应话术风格、语气语调，让助手播报更具拟人化、差异化，摆脱机械播报感。",
+    "demoCommand": "设置语音为人设INTJ",
     "carModels": [
       {
         "carModel": "理想L6",
@@ -756,11 +567,11 @@
     "status": 1
   },
   {
-    "id": 29,
+    "id": 22,
     "categoryId": 5,
-    "funcName": "儿童对话模式",
-    "definition": "专门为儿童设计的对话模式，使用更简单的语言和更友好的语气。",
-    "demoCommand": "给我讲个故事",
+    "funcName": "儿童专属语音模式",
+    "definition": "切换儿童专属音色、话术与交互逻辑，语言更童趣、易懂，屏蔽不适宜儿童的内容，适配车内儿童乘车交互场景。",
+    "demoCommand": "开启儿童模式",
     "carModels": [
       {
         "carModel": "理想L6",
@@ -783,10 +594,10 @@
     "status": 1
   },
   {
-    "id": 30,
+    "id": 23,
     "categoryId": 5,
-    "funcName": "声音复刻",
-    "definition": "支持用户声音复刻，让语音助手拥有与用户相似的声音。",
+    "funcName": "语音声音复刻",
+    "definition": "支持用户录制专属人声，系统AI复刻生成同款音色，可设置为助手播报音色，实现千人千音的极致个性化体验。",
     "demoCommand": "录制我的声音",
     "carModels": [
       {
@@ -810,11 +621,200 @@
     "status": 1
   },
   {
-    "id": 31,
+    "id": 24,
     "categoryId": 5,
-    "funcName": "音效音调",
-    "definition": "支持音效和音调调节，可自定义语音助手的声音效果和语调。",
-    "demoCommand": "声音高一点",
+    "funcName": "标准化报警提示音",
+    "definition": "车辆故障、安全预警、操作异常、权限限制等场景下，触发标准化警示音效与语音提示，及时提醒用户车辆状态异常，保障行车安全。",
+    "demoCommand": "（自动触发）",
+    "carModels": [
+      {
+        "carModel": "理想L6",
+        "embedUrl": ""
+      },
+      {
+        "carModel": "问界M8",
+        "embedUrl": ""
+      },
+      {
+        "carModel": "银河M9",
+        "embedUrl": ""
+      },
+      {
+        "carModel": "深蓝L06",
+        "embedUrl": ""
+      }
+    ],
+    "sort": 5,
+    "status": 1
+  },
+  {
+    "id": 25,
+    "categoryId": 5,
+    "funcName": "智能兜底回复",
+    "definition": "面对无法识别、无法执行、无对应功能的指令时，系统输出温和、规范的兜底话术，避免无响应、卡顿，同时引导用户下发有效指令。",
+    "demoCommand": "（无法识别时自动回复）",
+    "carModels": [
+      {
+        "carModel": "理想L6",
+        "embedUrl": ""
+      },
+      {
+        "carModel": "问界M8",
+        "embedUrl": ""
+      },
+      {
+        "carModel": "银河M9",
+        "embedUrl": ""
+      },
+      {
+        "carModel": "深蓝L06",
+        "embedUrl": ""
+      }
+    ],
+    "sort": 6,
+    "status": 1
+  },
+  {
+    "id": 26,
+    "categoryId": 5,
+    "funcName": "驾驶极简播报",
+    "definition": "车辆行驶过程中自动简化播报话术，删减冗余文字，采用简短精炼语音提示，避免长篇播报分散驾驶员注意力，兼顾信息传递与行车安全。",
+    "demoCommand": "（自动生效）",
+    "carModels": [
+      {
+        "carModel": "理想L6",
+        "embedUrl": ""
+      },
+      {
+        "carModel": "问界M8",
+        "embedUrl": ""
+      },
+      {
+        "carModel": "银河M9",
+        "embedUrl": ""
+      },
+      {
+        "carModel": "深蓝L06",
+        "embedUrl": ""
+      }
+    ],
+    "sort": 7,
+    "status": 1
+  },
+  {
+    "id": 27,
+    "categoryId": 3,
+    "funcName": "语音虚拟形象IP",
+    "definition": "车机端展示专属语音助手虚拟形象，支持写实、抽象多种形象风格，交互过程中形象同步展示，提升交互可视化效果。",
+    "demoCommand": "（自动显示）",
+    "carModels": [
+      {
+        "carModel": "理想L6",
+        "embedUrl": ""
+      },
+      {
+        "carModel": "问界M8",
+        "embedUrl": ""
+      },
+      {
+        "carModel": "银河M9",
+        "embedUrl": ""
+      },
+      {
+        "carModel": "深蓝L06",
+        "embedUrl": ""
+      }
+    ],
+    "sort": 1,
+    "status": 1
+  },
+  {
+    "id": 28,
+    "categoryId": 3,
+    "funcName": "虚拟形象自定义",
+    "definition": "支持用户自主更换、设置、微调语音助手虚拟形象，自定义形象外观、风格，实现个性化UI交互体验。",
+    "demoCommand": "更换虚拟形象",
+    "carModels": [
+      {
+        "carModel": "理想L6",
+        "embedUrl": ""
+      },
+      {
+        "carModel": "问界M8",
+        "embedUrl": ""
+      },
+      {
+        "carModel": "银河M9",
+        "embedUrl": ""
+      },
+      {
+        "carModel": "深蓝L06",
+        "embedUrl": ""
+      }
+    ],
+    "sort": 2,
+    "status": 1
+  },
+  {
+    "id": 29,
+    "categoryId": 3,
+    "funcName": "表情动作同步联动",
+    "definition": "语音助手播报、对话、响应指令时，虚拟形象同步匹配对应表情、动作动画，实现语音、画面、动作联动，拟人化交互体验更强。",
+    "demoCommand": "（自动联动）",
+    "carModels": [
+      {
+        "carModel": "理想L6",
+        "embedUrl": ""
+      },
+      {
+        "carModel": "问界M8",
+        "embedUrl": ""
+      },
+      {
+        "carModel": "银河M9",
+        "embedUrl": ""
+      },
+      {
+        "carModel": "深蓝L06",
+        "embedUrl": ""
+      }
+    ],
+    "sort": 3,
+    "status": 1
+  },
+  {
+    "id": 30,
+    "categoryId": 3,
+    "funcName": "手势静音交互",
+    "definition": "多模态体感交互能力，用户通过指定静音手势，可快速静音助手播报、暂停语音交互，无需语音指令、无需触控，操作更便捷。",
+    "demoCommand": "（手势静音）",
+    "carModels": [
+      {
+        "carModel": "理想L6",
+        "embedUrl": ""
+      },
+      {
+        "carModel": "问界M8",
+        "embedUrl": ""
+      },
+      {
+        "carModel": "银河M9",
+        "embedUrl": ""
+      },
+      {
+        "carModel": "深蓝L06",
+        "embedUrl": ""
+      }
+    ],
+    "sort": 4,
+    "status": 1
+  },
+  {
+    "id": 31,
+    "categoryId": 3,
+    "funcName": "视线追踪语音融合交互",
+    "definition": "结合车内视线追踪摄像头，识别用户注视位置，结合语音指令精准判定操作对象，实现“看哪里、说哪里、控哪里”的精准交互，杜绝误操作。",
+    "demoCommand": "（视线+语音）打开这个",
     "carModels": [
       {
         "carModel": "理想L6",
@@ -838,10 +838,10 @@
   },
   {
     "id": 32,
-    "categoryId": 5,
-    "funcName": "报警提示音",
-    "definition": "提供多种报警提示音，确保驾驶安全提醒清晰可辨。",
-    "demoCommand": "（自动播放）",
+    "categoryId": 3,
+    "funcName": "手势语音融合交互",
+    "definition": "融合手势识别与语音交互技术，通过手势动作辅助确认、切换、取消语音指令，多维交互互补，提升交互精准度与科技感。",
+    "demoCommand": "（手势+语音）确认",
     "carModels": [
       {
         "carModel": "理想L6",
@@ -865,64 +865,10 @@
   },
   {
     "id": 33,
-    "categoryId": 5,
-    "funcName": "兜底回复",
-    "definition": "当无法理解用户指令时，提供友好的兜底回复，引导用户重新表达。",
-    "demoCommand": "（无法理解时）",
-    "carModels": [
-      {
-        "carModel": "理想L6",
-        "embedUrl": ""
-      },
-      {
-        "carModel": "问界M8",
-        "embedUrl": ""
-      },
-      {
-        "carModel": "银河M9",
-        "embedUrl": ""
-      },
-      {
-        "carModel": "深蓝L06",
-        "embedUrl": ""
-      }
-    ],
-    "sort": 7,
-    "status": 1
-  },
-  {
-    "id": 34,
-    "categoryId": 5,
-    "funcName": "驾驶状态简洁播报",
-    "definition": "在驾驶状态下采用更简洁的播报方式，减少不必要的信息干扰。",
-    "demoCommand": "（自动切换）",
-    "carModels": [
-      {
-        "carModel": "理想L6",
-        "embedUrl": ""
-      },
-      {
-        "carModel": "问界M8",
-        "embedUrl": ""
-      },
-      {
-        "carModel": "银河M9",
-        "embedUrl": ""
-      },
-      {
-        "carModel": "深蓝L06",
-        "embedUrl": ""
-      }
-    ],
-    "sort": 8,
-    "status": 1
-  },
-  {
-    "id": 35,
     "categoryId": 6,
-    "funcName": "媒体播放",
-    "definition": "支持电台、音乐、视频等媒体内容的语音控制，丰富车内娱乐体验。",
-    "demoCommand": "播放音乐 / 打开电台 / 播放视频",
+    "funcName": "影音媒体控制",
+    "definition": "支持语音全量控制车载媒体功能，包含在线音乐、本地视频、车载电台、有声内容的播放、暂停、切歌、调节音量、切换音源等所有操作。",
+    "demoCommand": "播放音乐 / 下一首 / 调高音量",
     "carModels": [
       {
         "carModel": "理想L6",
@@ -945,11 +891,11 @@
     "status": 1
   },
   {
-    "id": 36,
+    "id": 34,
     "categoryId": 6,
-    "funcName": "资讯查询",
-    "definition": "支持天气、新闻、股票、航班、日历等资讯的语音查询服务。",
-    "demoCommand": "今天天气怎么样 / 最近新闻 / 查航班",
+    "funcName": "生活资讯查询",
+    "definition": "支持语音查询各类实时资讯与生活信息，涵盖天气、热点新闻、股票行情、航班动态、日历日程、路况信息等，行车途中快速获取所需信息。",
+    "demoCommand": "今天天气怎么样 / 播放新闻",
     "carModels": [
       {
         "carModel": "理想L6",
@@ -972,11 +918,11 @@
     "status": 1
   },
   {
-    "id": 37,
+    "id": 35,
     "categoryId": 6,
-    "funcName": "导航",
-    "definition": "支持目的地搜索、路线规划、实时导航等全功能语音控制。",
-    "demoCommand": "导航到天安门 / 避开拥堵",
+    "funcName": "智能导航服务",
+    "definition": "全语音操控导航全流程，支持语音设置目的地、规划路线、切换高速/省油路线、查询路况、搜索周边地标、开启导航、关闭导航、规避拥堵等全场景操作。",
+    "demoCommand": "导航到公司 / 避开拥堵",
     "carModels": [
       {
         "carModel": "理想L6",
@@ -999,11 +945,11 @@
     "status": 1
   },
   {
-    "id": 38,
+    "id": 36,
     "categoryId": 6,
-    "funcName": "电话",
-    "definition": "支持语音拨号、接听、挂断、回拨等电话功能的语音控制。",
-    "demoCommand": "打电话给张三 / 接听电话",
+    "funcName": "语音通讯服务",
+    "definition": "支持语音拨打电话、接听挂断来电、查询通话记录、拨打通讯录好友电话，全程无需手动操作，保障行车通讯安全。",
+    "demoCommand": "打电话给张三 / 挂断电话",
     "carModels": [
       {
         "carModel": "理想L6",
@@ -1026,11 +972,11 @@
     "status": 1
   },
   {
-    "id": 39,
+    "id": 37,
     "categoryId": 6,
-    "funcName": "车控",
-    "definition": "支持车窗、空调、座椅、灯光等整车硬件的语音控制，全量覆盖。",
-    "demoCommand": "打开车窗 / 空调25度 / 座椅加热",
+    "funcName": "全量车辆语音控制",
+    "definition": "支持语音操控全车硬件与设置，涵盖空调、门窗、天窗、座椅、灯光、后备箱、充电、底盘、车机设置等全量车身控制功能，实现无触控用车。",
+    "demoCommand": "打开空调 / 打开天窗 / 调节座椅",
     "carModels": [
       {
         "carModel": "理想L6",
@@ -1053,11 +999,11 @@
     "status": 1
   },
   {
-    "id": 40,
+    "id": 38,
     "categoryId": 6,
-    "funcName": "小游戏",
-    "definition": "支持语音控制的车内小游戏，增加驾驶乐趣和互动体验。",
-    "demoCommand": "玩个游戏 / 猜谜",
+    "funcName": "车载轻互动游戏",
+    "definition": "搭载语音交互小游戏，支持语音启动、操控游戏，适配停车休憩场景，丰富车内娱乐体验。",
+    "demoCommand": "玩个游戏",
     "carModels": [
       {
         "carModel": "理想L6",
@@ -1080,11 +1026,11 @@
     "status": 1
   },
   {
-    "id": 41,
+    "id": 39,
     "categoryId": 6,
-    "funcName": "闲聊",
-    "definition": "支持日常闲聊对话，提供有趣的话题和互动内容。",
-    "demoCommand": "今天心情怎么样 / 讲个笑话",
+    "funcName": "智能闲聊互动",
+    "definition": "支持日常闲聊、趣味问答、情感互动，满足用户休闲聊天、打发时间的需求，拟人化对话自然流畅。",
+    "demoCommand": "讲个笑话 / 今天心情怎么样",
     "carModels": [
       {
         "carModel": "理想L6",
@@ -1107,11 +1053,11 @@
     "status": 1
   },
   {
-    "id": 42,
+    "id": 40,
     "categoryId": 6,
-    "funcName": "百科",
-    "definition": "支持百科知识查询，解答用户的各种问题。",
-    "demoCommand": "什么是人工智能 / 长城有多长",
+    "funcName": "百科知识问答",
+    "definition": "覆盖生活、科普、常识、历史等全品类百科知识，用户可语音提问，助手实时解答，实现行车碎片化知识获取。",
+    "demoCommand": "什么是人工智能",
     "carModels": [
       {
         "carModel": "理想L6",
@@ -1134,10 +1080,10 @@
     "status": 1
   },
   {
-    "id": 43,
+    "id": 41,
     "categoryId": 6,
-    "funcName": "识物",
-    "definition": "支持拍照识物功能，识别物体名称和相关信息。",
+    "funcName": "智能实物识别",
+    "definition": "结合车载影像设备，支持语音触发识物功能，对周边景物、物品、地标进行识别讲解，适配出行游玩场景。",
     "demoCommand": "这是什么",
     "carModels": [
       {
@@ -1161,11 +1107,11 @@
     "status": 1
   },
   {
-    "id": 44,
+    "id": 42,
     "categoryId": 6,
-    "funcName": "用车手册",
-    "definition": "支持语音查询车辆使用手册，解答用车疑问。",
-    "demoCommand": "怎么换轮胎 / 保养周期是多少",
+    "funcName": "语音查阅用车手册",
+    "definition": "支持语音查询车辆功能、按键说明、用车技巧、故障解决方法，快速调取车载手册内容，无需翻阅纸质手册。",
+    "demoCommand": "怎么使用座椅按摩",
     "carModels": [
       {
         "carModel": "理想L6",
@@ -1188,11 +1134,11 @@
     "status": 1
   },
   {
-    "id": 45,
+    "id": 43,
     "categoryId": 6,
-    "funcName": "语音反馈",
-    "definition": "支持语音反馈功能，用户可通过语音提交反馈和建议。",
-    "demoCommand": "反馈一个问题",
+    "funcName": "语音交互反馈",
+    "definition": "支持用户语音提交功能建议、问题反馈、故障上报，系统自动记录并同步后台，便捷完成产品反馈。",
+    "demoCommand": "反馈问题",
     "carModels": [
       {
         "carModel": "理想L6",
@@ -1215,11 +1161,11 @@
     "status": 1
   },
   {
-    "id": 46,
+    "id": 44,
     "categoryId": 6,
     "funcName": "语音记事提醒",
-    "definition": "支持语音创建记事和提醒事项，帮助用户记录重要信息。",
-    "demoCommand": "提醒我明天开会 / 创建待办事项",
+    "definition": "支持语音快速记录备忘内容、设置行车提醒、日程提醒，无需手动输入，自动保存记事内容并按时提醒。",
+    "demoCommand": "提醒我下午开会",
     "carModels": [
       {
         "carModel": "理想L6",
@@ -1242,11 +1188,11 @@
     "status": 1
   },
   {
-    "id": 47,
+    "id": 45,
     "categoryId": 6,
     "funcName": "语音任务创建",
-    "definition": "支持语音创建各种任务，如日程安排、购物清单等。",
-    "demoCommand": "添加购物清单 / 创建日程",
+    "definition": "支持语音创建定时任务、用车任务、提醒任务，系统自动按时执行或弹窗提醒，实现智能任务管理。",
+    "demoCommand": "创建日程提醒",
     "carModels": [
       {
         "carModel": "理想L6",
@@ -1269,11 +1215,11 @@
     "status": 1
   },
   {
-    "id": 48,
+    "id": 46,
     "categoryId": 6,
-    "funcName": "IOT控制",
-    "definition": "支持语音控制智能家居设备，实现车家互联。",
-    "demoCommand": "打开家里的灯 / 关闭空调",
+    "funcName": "车载IoT智能互联",
+    "definition": "支持车机语音联动控制家居IoT设备，实现车家互联，可语音操控智能家居开关、状态查询等操作。",
+    "demoCommand": "打开家里的空调",
     "carModels": [
       {
         "carModel": "理想L6",
@@ -1296,11 +1242,11 @@
     "status": 1
   },
   {
-    "id": 49,
+    "id": 47,
     "categoryId": 6,
-    "funcName": "上车问候",
-    "definition": "智能上车问候功能，根据时间、天气等信息提供个性化问候。",
-    "demoCommand": "（自动问候）",
+    "funcName": "上车智能问候",
+    "definition": "识别用户上车、启动车辆后，自动触发个性化语音问候，结合时间、天气、用户习惯推送欢迎话术，提升座舱智能化体验。",
+    "demoCommand": "（自动触发）",
     "carModels": [
       {
         "carModel": "理想L6",
@@ -1323,11 +1269,11 @@
     "status": 1
   },
   {
-    "id": 50,
+    "id": 48,
     "categoryId": 7,
-    "funcName": "实况关怀",
-    "definition": "实时关注车辆状态和驾驶环境，提供贴心关怀提醒。",
-    "demoCommand": "（自动提醒）",
+    "funcName": "全场景实况关怀",
+    "definition": "结合天气、时间、路况、行车场景，主动推送暖心关怀提示，如下雨提醒开窗、高温提醒开启空调、夜间行车提醒灯光开启等。",
+    "demoCommand": "（自动触发）",
     "carModels": [
       {
         "carModel": "理想L6",
@@ -1350,10 +1296,10 @@
     "status": 1
   },
   {
-    "id": 51,
+    "id": 49,
     "categoryId": 7,
-    "funcName": "离车提醒",
-    "definition": "检测到用户离车时，提醒用户带走物品或关闭设备。",
+    "funcName": "离车安全提醒",
+    "definition": "用户熄火离车时，自动检测车辆状态，针对未关门窗、未熄火、灯光未关、设备未断电等问题主动语音提醒，规避用车隐患。",
     "demoCommand": "（自动提醒）",
     "carModels": [
       {
@@ -1377,10 +1323,10 @@
     "status": 1
   },
   {
-    "id": 52,
+    "id": 50,
     "categoryId": 7,
-    "funcName": "后排遗忘提醒",
-    "definition": "检测后排乘客下车情况，防止儿童或物品被遗忘在车内。",
+    "funcName": "后排遗留提醒",
+    "definition": "通过座舱感知设备，检测后排遗留儿童、宠物、物品，车辆熄火离车后主动语音+弹窗提醒，杜绝遗留安全事故。",
     "demoCommand": "（自动提醒）",
     "carModels": [
       {
@@ -1404,11 +1350,11 @@
     "status": 1
   },
   {
-    "id": 53,
+    "id": 51,
     "categoryId": 7,
-    "funcName": "疲劳驾驶提醒",
-    "definition": "通过面部识别技术监测驾驶员状态，检测到疲劳时主动提醒休息。",
-    "demoCommand": "（自动提醒）",
+    "funcName": "疲劳驾驶预警提醒",
+    "definition": "结合行车时长、驾驶状态、面部神态，智能识别驾驶员疲劳状态，主动语音预警、提醒停车休息，保障长途行车安全。",
+    "demoCommand": "（自动预警）",
     "carModels": [
       {
         "carModel": "理想L6",
@@ -1431,10 +1377,10 @@
     "status": 1
   },
   {
-    "id": 54,
+    "id": 52,
     "categoryId": 7,
-    "funcName": "美食推荐",
-    "definition": "基于当前位置和偏好，智能推荐附近美食餐厅。",
+    "funcName": "美食智能推荐",
+    "definition": "结合用户位置、用餐时段、用户偏好，主动推送周边美食、网红门店、评分优质餐饮，支持一键导航前往。",
     "demoCommand": "（自动推荐）",
     "carModels": [
       {
@@ -1458,10 +1404,10 @@
     "status": 1
   },
   {
-    "id": 55,
+    "id": 53,
     "categoryId": 7,
-    "funcName": "停车推荐",
-    "definition": "根据目的地智能推荐附近停车场，方便用户停车。",
+    "funcName": "停车智能推荐",
+    "definition": "抵达目的地周边后，主动推送附近空闲停车场、收费标准、距离信息，智能推荐最优停车点位，解决停车难问题。",
     "demoCommand": "（自动推荐）",
     "carModels": [
       {
@@ -1485,10 +1431,10 @@
     "status": 1
   },
   {
-    "id": 56,
+    "id": 54,
     "categoryId": 7,
-    "funcName": "旅行推荐",
-    "definition": "根据行程和兴趣，智能推荐旅游景点和路线。",
+    "funcName": "出行旅行推荐",
+    "definition": "结合节假日、出行时段、用户出行轨迹，主动推送周边景点、游玩路线、旅行攻略，适配自驾出行场景。",
     "demoCommand": "（自动推荐）",
     "carModels": [
       {
@@ -1512,10 +1458,10 @@
     "status": 1
   },
   {
-    "id": 57,
+    "id": 55,
     "categoryId": 7,
-    "funcName": "续航提醒",
-    "definition": "实时监测电量或油量，适时提醒用户充电或加油。",
+    "funcName": "续航状态智能提醒",
+    "definition": "实时监测车辆油量、电量续航，续航不足、临近亏电、长途续航不足时，主动语音提醒，并推送就近加油站、充电桩点位。",
     "demoCommand": "（自动提醒）",
     "carModels": [
       {
@@ -1539,10 +1485,10 @@
     "status": 1
   },
   {
-    "id": 58,
+    "id": 56,
     "categoryId": 7,
-    "funcName": "故障提醒",
-    "definition": "实时监测车辆状态，发现故障或异常时及时提醒用户。",
+    "funcName": "车辆故障智能提醒",
+    "definition": "实时监测全车零部件、系统运行状态，识别车辆故障、异常隐患后，主动语音播报故障问题、说明影响，并推送维保建议与就近售后点位。",
     "demoCommand": "（自动提醒）",
     "carModels": [
       {

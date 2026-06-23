@@ -1,43 +1,43 @@
 [
   {
     "id": 1,
-    "name": "声学前端",
+    "name": "声学前端技术",
     "slug": "acoustic-frontend",
     "sort": 1
   },
   {
     "id": 2,
-    "name": "唤醒",
+    "name": "语音唤醒交互能力",
     "slug": "wake-up",
     "sort": 2
   },
   {
     "id": 3,
-    "name": "UIUX",
+    "name": "多模态UI交互能力",
     "slug": "uiux",
     "sort": 3
   },
   {
     "id": 4,
-    "name": "语音识别",
+    "name": "智能语音识别能力",
     "slug": "speech-recognition",
     "sort": 4
   },
   {
     "id": 5,
-    "name": "TTS",
+    "name": "语音播报合成能力",
     "slug": "tts",
     "sort": 5
   },
   {
     "id": 6,
-    "name": "全场景功能支持",
+    "name": "全场景语音服务能力",
     "slug": "scene-support",
     "sort": 6
   },
   {
     "id": 7,
-    "name": "主动提醒或推荐",
+    "name": "主动智能提醒与推荐服务",
     "slug": "active-reminder",
     "sort": 7
   }

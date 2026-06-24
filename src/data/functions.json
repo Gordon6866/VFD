@@ -2,13 +2,13 @@
   {
     "id": 1,
     "categoryId": 1,
-    "funcName": "车载拾音降噪",
+    "funcName": "拾音降噪",
     "definition": "针对行车风噪、路噪、胎噪、空调噪音等复杂车载环境，通过声学算法对拾取的人声进行降噪优化，过滤环境干扰杂音，清晰提取有效人声信号，大幅提升行车过程中语音交互的识别准确率，适配低速、高速、开窗等全行车场景。",
     "demoCommand": "（自动生效）",
     "carModels": [
       {
         "carModel": "理想L6",
-        "embedUrl": "https://foxconn.sharepoint.com/sites/msteams_809b30_201831-Off-Board/_layouts/15/embed.aspx?UniqueId=91aaf445-cf2d-4f2f-ade8-d3f4fda73f41&embed=%7B%22ust%22%3Atrue%7D&referrer=StreamWebApp&referrerScenario=EmbedDialog.Create"
+        "embedUrl": ""
       },
       {
         "carModel": "问界M8",
@@ -34,20 +34,8 @@
     "demoCommand": "打开我这边的车窗",
     "carModels": [
       {
-        "carModel": "理想L6",
-        "embedUrl": ""
-      },
-      {
-        "carModel": "问界M8",
-        "embedUrl": ""
-      },
-      {
         "carModel": "银河M9",
-        "embedUrl": ""
-      },
-      {
-        "carModel": "深蓝L06",
-        "embedUrl": ""
+        "embedUrl": "https://foxconn.sharepoint.com/sites/msteams_809b30_201831-Off-Board/_layouts/15/embed.aspx?UniqueId=bcf4f345-65f3-4c55-b0ea-abfb932298c2&embed=%7B%22ust%22%3Atrue%2C%22hv%22%3A%22CopyEmbedCode%22%7D&referrer=StreamWebApp&referrerScenario=EmbedDialog.Create"
       }
     ],
     "sort": 2,
@@ -57,25 +45,17 @@
     "id": 3,
     "categoryId": 2,
     "funcName": "全时免唤醒对话",
-    "definition": "行业通用持续对话能力，无需每次下达指令前重复唤醒，语音助手长期处于待命状态，支持连续下发多条指令，适配高频车载操作场景，大幅简化交互流程。",
-    "demoCommand": "打开空调 / 播放音乐 / 调低音量",
+    "definition": "全时对话技术，针对指定的高频指令，无需唤醒词即可随时下达，打造自然流畅的交互体验。",
+    "demoCommand": "打开空调/播放音乐/调低音量",
     "carModels": [
       {
         "carModel": "理想L6",
-        "embedUrl": ""
-      },
-      {
-        "carModel": "问界M8",
-        "embedUrl": ""
+        "embedUrl": "https://foxconn.sharepoint.com/sites/msteams_809b30_201831-Off-Board/_layouts/15/embed.aspx?UniqueId=adb21835-6f7e-4cef-b06c-e73117fc0355&embed=%7B%22ust%22%3Atrue%2C%22hv%22%3A%22CopyEmbedCode%22%7D&referrer=StreamWebApp&referrerScenario=EmbedDialog.Create"
       },
       {
         "carModel": "银河M9",
-        "embedUrl": ""
-      },
-      {
-        "carModel": "深蓝L06",
-        "embedUrl": ""
-      }
+        "embedUrl": "https://foxconn.sharepoint.com/sites/msteams_809b30_201831-Off-Board/_layouts/15/embed.aspx?UniqueId=74bf7f1d-e5e9-47a2-97d3-cf64b8acb566&embed=%7B%22ust%22%3Atrue%2C%22hv%22%3A%22CopyEmbedCode%22%7D&referrer=StreamWebApp&referrerScenario=EmbedDialog.Create"
+      }      
     ],
     "sort": 1,
     "status": 1
@@ -115,20 +95,8 @@
     "demoCommand": "设置唤醒词为'小助手'",
     "carModels": [
       {
-        "carModel": "理想L6",
-        "embedUrl": ""
-      },
-      {
-        "carModel": "问界M8",
-        "embedUrl": ""
-      },
-      {
-        "carModel": "银河M9",
-        "embedUrl": ""
-      },
-      {
         "carModel": "深蓝L06",
-        "embedUrl": ""
+        "embedUrl": "https://foxconn.sharepoint.com/sites/msteams_809b30_201831-Off-Board/_layouts/15/embed.aspx?UniqueId=c698458f-92af-40d4-8864-821c989632dc&embed=%7B%22ust%22%3Atrue%2C%22hv%22%3A%22CopyEmbedCode%22%7D&referrer=StreamWebApp&referrerScenario=EmbedDialog.Create"
       }
     ],
     "sort": 3,
@@ -139,15 +107,15 @@
     "categoryId": 2,
     "funcName": "One-shot一键式语音交互",
     "definition": "行业标准交互能力，支持前唤醒词+指令连读、指令结束后接续交互两种模式，无需等待助手唤醒应答完毕即可直接下达操作指令，缩短交互等待时长，实现秒级响应。",
-    "demoCommand": "理想同学，打开空调",
+    "demoCommand": "理想同学打开空调/打开空调理想同学/打开空调小P",
     "carModels": [
       {
         "carModel": "理想L6",
         "embedUrl": ""
       },
       {
-        "carModel": "问界M8",
-        "embedUrl": ""
+        "carModel": "小鹏X9",
+        "embedUrl": "https://foxconn.sharepoint.com/sites/msteams_809b30_201831-Off-Board/_layouts/15/embed.aspx?UniqueId=4a88a6f5-a0da-4c13-a2ee-c364edd084a2&embed=%7B%22ust%22%3Atrue%2C%22hv%22%3A%22CopyEmbedCode%22%7D&referrer=StreamWebApp&referrerScenario=EmbedDialog.Create"
       },
       {
         "carModel": "银河M9",
@@ -166,7 +134,7 @@
     "categoryId": 2,
     "funcName": "自定义唤醒响应",
     "definition": "支持用户自定义助手唤醒后的回复话术、响应动画、提示音效，打造个性化助手交互体验，告别固定机械回复。",
-    "demoCommand": "设置唤醒语为'我在'",
+    "demoCommand": "设置唤醒回复语为'我在'",
     "carModels": [
       {
         "carModel": "理想L6",
@@ -205,7 +173,7 @@
       },
       {
         "carModel": "银河M9",
-        "embedUrl": ""
+        "embedUrl": "https://foxconn.sharepoint.com/sites/msteams_809b30_201831-Off-Board/_layouts/15/embed.aspx?UniqueId=d1595cdd-a996-4b30-8f0d-7547e4b00b94&embed=%7B%22ust%22%3Atrue%2C%22hv%22%3A%22CopyEmbedCode%22%7D&referrer=StreamWebApp&referrerScenario=EmbedDialog.Create"
       },
       {
         "carModel": "深蓝L06",
@@ -247,7 +215,7 @@
     "categoryId": 4,
     "funcName": "模糊语义识别",
     "definition": "无需用户严格标准话术，支持口语化、不规范、模糊化指令表达，系统可智能解析用户真实操作意图，适配日常口语交流习惯，降低用户操作学习成本。",
-    "demoCommand": "去那个地方",
+    "demoCommand": "去那个地方/我有点冷/我饿了",
     "carModels": [
       {
         "carModel": "理想L6",
@@ -255,7 +223,7 @@
       },
       {
         "carModel": "问界M8",
-        "embedUrl": ""
+        "embedUrl": "https://foxconn.sharepoint.com/sites/msteams_809b30_201831-Off-Board/_layouts/15/embed.aspx?UniqueId=dd665d50-8c0f-4013-b510-aecd51a8c169&embed=%7B%22ust%22%3Atrue%2C%22hv%22%3A%22CopyEmbedCode%22%7D&referrer=StreamWebApp&referrerScenario=EmbedDialog.Create"
       },
       {
         "carModel": "银河M9",
@@ -278,7 +246,7 @@
     "carModels": [
       {
         "carModel": "理想L6",
-        "embedUrl": ""
+        "embedUrl": "https://foxconn.sharepoint.com/sites/msteams_809b30_201831-Off-Board/_layouts/15/embed.aspx?UniqueId=141c4592-9add-44c0-a95d-d3c8e2d48eeb&embed=%7B%22ust%22%3Atrue%2C%22hv%22%3A%22CopyEmbedCode%22%7D&referrer=StreamWebApp&referrerScenario=EmbedDialog.Create"
       },
       {
         "carModel": "问界M8",
@@ -317,7 +285,7 @@
       },
       {
         "carModel": "深蓝L06",
-        "embedUrl": ""
+        "embedUrl": "https://foxconn.sharepoint.com/sites/msteams_809b30_201831-Off-Board/_layouts/15/embed.aspx?UniqueId=8e7cd68f-c02d-48f8-b043-350f64411968&embed=%7B%22ust%22%3Atrue%2C%22hv%22%3A%22CopyEmbedCode%22%7D&referrer=StreamWebApp&referrerScenario=EmbedDialog.Create"
       }
     ],
     "sort": 4,
@@ -332,7 +300,7 @@
     "carModels": [
       {
         "carModel": "理想L6",
-        "embedUrl": ""
+        "embedUrl": "https://foxconn.sharepoint.com/sites/msteams_809b30_201831-Off-Board/_layouts/15/embed.aspx?UniqueId=56a1b00a-a6a0-4a4d-b34a-dcca62b920a4&embed=%7B%22ust%22%3Atrue%2C%22hv%22%3A%22CopyEmbedCode%22%7D&referrer=StreamWebApp&referrerScenario=EmbedDialog.Create"
       },
       {
         "carModel": "问界M8",
@@ -355,7 +323,7 @@
     "categoryId": 4,
     "funcName": "多轮连续对话",
     "definition": "单次唤醒后支持连续多轮指令交互，无需重复唤醒，可连续完成多项操作，适配连贯式用车操作需求，提升交互效率。",
-    "demoCommand": "打开空调 / 温度调高一点 / 打开音乐",
+    "demoCommand": "打开音乐+打开空调+导航回家",
     "carModels": [
       {
         "carModel": "理想L6",
@@ -409,15 +377,15 @@
     "categoryId": 4,
     "funcName": "复合多意图指令识别",
     "definition": "支持单条语音包含多个操作指令，可一次性解析并执行多项不同功能，例如“打开空调并播放音乐、调低音量”，无需分多次指令操作，高效完成复合操作。",
-    "demoCommand": "打开空调并播放音乐，调低音量",
+    "demoCommand": "打开空调，播放音乐，音量小一点",
     "carModels": [
       {
         "carModel": "理想L6",
-        "embedUrl": ""
+        "embedUrl": "https://foxconn.sharepoint.com/sites/msteams_809b30_201831-Off-Board/_layouts/15/embed.aspx?UniqueId=9d9a09be-d470-4c62-846c-ce23de964ce9&embed=%7B%22ust%22%3Atrue%2C%22hv%22%3A%22CopyEmbedCode%22%7D&referrer=StreamWebApp&referrerScenario=EmbedDialog.Create"
       },
       {
         "carModel": "问界M8",
-        "embedUrl": ""
+        "embedUrl": "https://foxconn.sharepoint.com/sites/msteams_809b30_201831-Off-Board/_layouts/15/embed.aspx?UniqueId=0148ae63-bf3b-42d2-a658-212c5a8dfccc&embed=%7B%22ust%22%3Atrue%2C%22hv%22%3A%22CopyEmbedCode%22%7D&referrer=StreamWebApp&referrerScenario=EmbedDialog.Create"
       },
       {
         "carModel": "银河M9",
@@ -436,7 +404,7 @@
     "categoryId": 4,
     "funcName": "可见即可说",
     "definition": "行业标配核心能力，车机屏幕显示的文字、按钮、菜单、功能选项，均可直接语音点击、打开、切换，无需手动触控，所见即可语音操作，适配行车安全操作需求。",
-    "demoCommand": "点击设置 / 打开蓝牙",
+    "demoCommand": "点击设置 / 打开蓝牙 / 向上滑 / 下一页",
     "carModels": [
       {
         "carModel": "理想L6",
@@ -463,7 +431,7 @@
     "categoryId": 4,
     "funcName": "智能引导澄清",
     "definition": "当用户指令模糊、意图不明确、指令缺失关键信息时，助手不会误判，将主动弹窗+语音引导用户补充信息、确认需求，保障指令精准执行。",
-    "demoCommand": "导航去公司（系统：请问你想去哪个公司？）",
+    "demoCommand": "导航去...（系统：请直接告诉我目的地名称",
     "carModels": [
       {
         "carModel": "理想L6",
@@ -475,7 +443,7 @@
       },
       {
         "carModel": "银河M9",
-        "embedUrl": ""
+        "embedUrl": "https://foxconn.sharepoint.com/sites/msteams_809b30_201831-Off-Board/_layouts/15/embed.aspx?UniqueId=20a16d83-fffe-4dfd-b6d2-c3c169f42862&embed=%7B%22ust%22%3Atrue%2C%22hv%22%3A%22CopyEmbedCode%22%7D&referrer=StreamWebApp&referrerScenario=EmbedDialog.Create"
       },
       {
         "carModel": "深蓝L06",
@@ -502,7 +470,7 @@
       },
       {
         "carModel": "银河M9",
-        "embedUrl": ""
+        "embedUrl": "https://foxconn.sharepoint.com/sites/msteams_809b30_201831-Off-Board/_layouts/15/embed.aspx?UniqueId=e0cc3128-4c52-4b8a-a2b1-6f441c4f6b1f&embed=%7B%22ust%22%3Atrue%2C%22hv%22%3A%22CopyEmbedCode%22%7D&referrer=StreamWebApp&referrerScenario=EmbedDialog.Create"
       },
       {
         "carModel": "深蓝L06",
@@ -517,7 +485,7 @@
     "categoryId": 5,
     "funcName": "自定义音色音效",
     "definition": "提供多套系统音色可选，支持用户自主调节语音音调、语速、音量，自定义专属播报音效，适配个人听觉偏好。",
-    "demoCommand": "设置语速快一点",
+    "demoCommand": "设置语速快一点/换一种声音",
     "carModels": [
       {
         "carModel": "理想L6",
@@ -845,19 +813,7 @@
     "carModels": [
       {
         "carModel": "理想L6",
-        "embedUrl": ""
-      },
-      {
-        "carModel": "问界M8",
-        "embedUrl": ""
-      },
-      {
-        "carModel": "银河M9",
-        "embedUrl": ""
-      },
-      {
-        "carModel": "深蓝L06",
-        "embedUrl": ""
+        "embedUrl": "https://foxconn.sharepoint.com/sites/msteams_809b30_201831-Off-Board/_layouts/15/embed.aspx?UniqueId=6c7a92d6-3ea8-43c2-a266-c2230c817b6c&embed=%7B%22ust%22%3Atrue%2C%22hv%22%3A%22CopyEmbedCode%22%7D&referrer=StreamWebApp&referrerScenario=EmbedDialog.Create"
       }
     ],
     "sort": 6,
@@ -898,16 +854,8 @@
     "demoCommand": "今天天气怎么样 / 播放新闻",
     "carModels": [
       {
-        "carModel": "理想L6",
-        "embedUrl": ""
-      },
-      {
-        "carModel": "问界M8",
-        "embedUrl": ""
-      },
-      {
         "carModel": "银河M9",
-        "embedUrl": ""
+        "embedUrl": "https://foxconn.sharepoint.com/sites/msteams_809b30_201831-Off-Board/_layouts/15/embed.aspx?UniqueId=91aaf445-cf2d-4f2f-ade8-d3f4fda73f41&embed=%7B%22ust%22%3Atrue%7D&referrer=StreamWebApp&referrerScenario=EmbedDialog.Create"
       },
       {
         "carModel": "深蓝L06",
@@ -1042,7 +990,7 @@
       },
       {
         "carModel": "银河M9",
-        "embedUrl": ""
+        "embedUrl": "https://foxconn.sharepoint.com/sites/msteams_809b30_201831-Off-Board/_layouts/15/embed.aspx?UniqueId=d0125754-8a5d-4d2a-a646-88fb6fd8bb63&embed=%7B%22ust%22%3Atrue%2C%22hv%22%3A%22CopyEmbedCode%22%7D&referrer=StreamWebApp&referrerScenario=EmbedDialog.Create"
       },
       {
         "carModel": "深蓝L06",
@@ -1096,7 +1044,7 @@
       },
       {
         "carModel": "银河M9",
-        "embedUrl": ""
+        "embedUrl": "https://foxconn.sharepoint.com/sites/msteams_809b30_201831-Off-Board/_layouts/15/embed.aspx?UniqueId=7dbb2298-6d6c-45cc-aa84-5af6bb7320d9&embed=%7B%22ust%22%3Atrue%2C%22hv%22%3A%22CopyEmbedCode%22%7D&referrer=StreamWebApp&referrerScenario=EmbedDialog.Create"
       },
       {
         "carModel": "深蓝L06",
@@ -1123,7 +1071,7 @@
       },
       {
         "carModel": "银河M9",
-        "embedUrl": ""
+        "embedUrl": "https://foxconn.sharepoint.com/sites/msteams_809b30_201831-Off-Board/_layouts/15/embed.aspx?UniqueId=81556ea9-a7a4-4c3d-9b90-3b86ea713cc0&embed=%7B%22ust%22%3Atrue%2C%22hv%22%3A%22CopyEmbedCode%22%7D&referrer=StreamWebApp&referrerScenario=EmbedDialog.Create"
       },
       {
         "carModel": "深蓝L06",
@@ -1150,7 +1098,7 @@
       },
       {
         "carModel": "银河M9",
-        "embedUrl": ""
+        "embedUrl": "https://foxconn.sharepoint.com/sites/msteams_809b30_201831-Off-Board/_layouts/15/embed.aspx?UniqueId=77bbdf08-8624-4078-b64e-25350e7526a5&embed=%7B%22ust%22%3Atrue%2C%22hv%22%3A%22CopyEmbedCode%22%7D&referrer=StreamWebApp&referrerScenario=EmbedDialog.Create"
       },
       {
         "carModel": "深蓝L06",

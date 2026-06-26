@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, useCallback } from "react";
+import { useState, useCallback, useEffect } from "react";
 
 // 图标组件
 const ChevronIcon = ({ isOpen, className = "" }) => (
@@ -53,25 +53,80 @@ const FuncIcon = () => (
   </svg>
 );
 
-const PlusIcon = () => (
-  <svg
-    className="w-4 h-4"
-    fill="none"
-    stroke="currentColor"
-    viewBox="0 0 24 24"
-  >
-    <path
-      strokeLinecap="round"
-      strokeLinejoin="round"
-      strokeWidth={2}
-      d="M12 4v16m8-8H4"
-    />
-  </svg>
-);
+// 功能节点组件（支持三级子功能）
+function FunctionItem({ func, selectedFuncId, onSelect }) {
+  const [isExpanded, setIsExpanded] = useState(false);
+  const hasSubFunctions = func.subFunctions && func.subFunctions.length > 0;
+  const isSelected = selectedFuncId === func.id || 
+                     (hasSubFunctions && func.subFunctions.some(sub => sub.id === selectedFuncId));
+
+  const handleClick = () => {
+    if (hasSubFunctions) {
+      setIsExpanded(!isExpanded);
+    }
+    onSelect && onSelect(func);
+  };
+
+  return (
+    <div>
+      <button
+        key={func.id}
+        onClick={handleClick}
+        className={`w-full flex items-center gap-2 px-3 py-1.5 rounded-md text-sm 
+                   text-left transition-all duration-150
+                   ${isSelected
+                    ? "bg-blue-600 text-white font-semibold"
+                    : "text-gray-300 hover:bg-gray-700 hover:text-white"
+                  }`}
+      >
+        {hasSubFunctions ? (
+          <ChevronIcon isOpen={isExpanded} className="w-3 h-3" />
+        ) : (
+          <FuncIcon />
+        )}
+        <span className="truncate flex-1 text-white">{func.funcName || func.name}</span>
+        {hasSubFunctions && (
+          <span className="text-xs text-gray-400">{func.subFunctions.length}</span>
+        )}
+      </button>
+
+      {/* 三级子功能列表 */}
+      {hasSubFunctions && (
+        <div
+          className={`overflow-hidden transition-all duration-200 ease-in-out ${
+            isExpanded ? "max-h-none opacity-100" : "max-h-0 opacity-0"
+          }`}
+        >
+          <div className="ml-6 pl-2 border-l-2 border-gray-600 py-1 space-y-0.5">
+            {func.subFunctions.map((subFunc) => (
+              <button
+                key={subFunc.id}
+                onClick={() => onSelect && onSelect(subFunc)}
+                className={`w-full flex items-center gap-2 px-3 py-1 rounded-md text-xs
+                           text-left transition-all duration-150
+                           ${selectedFuncId === subFunc.id
+                            ? "bg-blue-600 text-white font-semibold"
+                            : "text-gray-400 hover:bg-gray-700 hover:text-white"
+                          }`}
+              >
+                <span className="truncate flex-1">{subFunc.name}</span>
+              </button>
+            ))}
+          </div>
+        </div>
+      )}
+    </div>
+  );
+}
 
 // 分类节点组件
-function CategoryNode({ category, functions, selectedFuncId, onSelect, onAddFunction }) {
-  const [isExpanded, setIsExpanded] = useState(true);
+function CategoryNode({ category, functions, selectedFuncId, onSelect, defaultExpanded = true }) {
+  const [isExpanded, setIsExpanded] = useState(defaultExpanded);
+
+  useEffect(() => {
+    setIsExpanded(defaultExpanded);
+  }, [defaultExpanded]);
+
   const categoryFunctions = functions.filter(
     (f) => f.categoryId === category.id
   );
@@ -103,21 +158,12 @@ function CategoryNode({ category, functions, selectedFuncId, onSelect, onAddFunc
       >
         <div className="ml-4 pl-2 border-l-2 border-gray-200 py-1 space-y-1">
           {categoryFunctions.map((func) => (
-            <button
+            <FunctionItem
               key={func.id}
-              onClick={() => {
-                onSelect && onSelect(func);
-              }}
-              className={`w-full flex items-center gap-2 px-3 py-1.5 rounded-md text-sm 
-                         text-left transition-all duration-150
-                         ${func.id === selectedFuncId
-                          ? "bg-blue-600 text-white font-semibold"
-                          : "text-gray-300 hover:bg-gray-700 hover:text-white"
-                        }`}
-            >
-              <FuncIcon />
-              <span className="truncate flex-1 text-white">{func.funcName || func.name}</span>
-            </button>
+              func={func}
+              selectedFuncId={selectedFuncId}
+              onSelect={onSelect}
+            />
           ))}
         </div>
       </div>
@@ -139,12 +185,19 @@ const getMatchWeight = (func, searchTerm) => {
   if (func.definition?.includes(searchTerm)) {
     weight += 1;
   }
+  if (func.subFunctions?.some(sub => sub.name?.includes(searchTerm))) {
+    weight += 5;
+  }
+  if (func.subFunctions?.some(sub => sub.definition?.includes(searchTerm))) {
+    weight += 1;
+  }
   return weight;
 };
 
 // 主 TreeView 组件
-export default function TreeView({ categories, functions, onSelectFunction, selectedFuncId, onAddCategory, onAddFunction }) {
+export default function TreeView({ categories, functions, onSelectFunction, selectedFuncId }) {
   const [searchFilter, setSearchFilter] = useState("");
+  const [allExpanded, setAllExpanded] = useState(false); // 全局展开/收折状态，默认收起
 
   const processCategories = () => {
     if (!searchFilter) {
@@ -195,41 +248,64 @@ export default function TreeView({ categories, functions, onSelectFunction, sele
         </div>
         
         {/* 搜索框 */}
-        <div className="relative">
-          <svg
-            className="absolute left-3 top-1/2 -translate-y-1/2 w-4 h-4 text-blue-300"
-            fill="none"
-            stroke="currentColor"
-            viewBox="0 0 24 24"
-          >
-            <path
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              strokeWidth={2}
-              d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"
-            />
-          </svg>
-          <input
-            type="text"
-            placeholder="搜索功能..."
-            value={searchFilter}
-            onChange={(e) => setSearchFilter(e.target.value)}
-            className="w-full pl-10 pr-10 py-2 rounded-lg bg-blue-500/20 text-white 
-                       placeholder-blue-200 text-sm focus:outline-none focus:bg-blue-500/30 
-                       transition border-none"
-          />
-          {searchFilter && (
-            <button
-              onClick={() => setSearchFilter("")}
-              className="absolute right-3 top-1/2 -translate-y-1/2 w-5 h-5 flex items-center justify-center
-                         text-blue-300 hover:text-white transition-colors"
-              title="清除搜索"
+        <div className="relative flex items-center gap-2">
+          <div className="relative flex-1">
+            <svg
+              className="absolute left-3 top-1/2 -translate-y-1/2 w-4 h-4 text-blue-300"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
             >
-              <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
-              </svg>
-            </button>
-          )}
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth={2}
+                d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"
+              />
+            </svg>
+            <input
+              type="text"
+              placeholder="搜索功能..."
+              value={searchFilter}
+              onChange={(e) => {
+                setSearchFilter(e.target.value);
+                // 搜索时自动展开所有分类
+                if (e.target.value && !allExpanded) {
+                  setAllExpanded(true);
+                }
+              }}
+              className="w-full pl-10 pr-10 py-2 rounded-lg bg-blue-500/20 text-white 
+                         placeholder-blue-200 text-sm focus:outline-none focus:bg-blue-500/30 
+                         transition border-none"
+            />
+            {searchFilter && (
+              <button
+                onClick={() => setSearchFilter("")}
+                className="absolute right-3 top-1/2 -translate-y-1/2 w-5 h-5 flex items-center justify-center
+                           text-blue-300 hover:text-white transition-colors"
+                title="清除搜索"
+              >
+                <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
+                </svg>
+              </button>
+            )}
+          </div>
+          {/* 全局展开/收折按钮 */}
+          <button
+            onClick={() => setAllExpanded(!allExpanded)}
+            className="p-2 rounded-lg bg-blue-500/20 hover:bg-blue-500/40 text-white transition-colors"
+            title={allExpanded ? "收起全部" : "展开全部"}
+          >
+            <svg
+              className={`w-4 h-4 transition-transform duration-200 ${allExpanded ? "rotate-180" : ""}`}
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+            >
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" />
+            </svg>
+          </button>
         </div>
       </div>
 
@@ -242,7 +318,7 @@ export default function TreeView({ categories, functions, onSelectFunction, sele
             functions={category.functions}
             selectedFuncId={selectedFuncId}
             onSelect={onSelectFunction}
-            onAddFunction={onAddFunction}
+            defaultExpanded={allExpanded}
           />
         ))}
 

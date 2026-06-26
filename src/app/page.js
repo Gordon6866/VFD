@@ -2,8 +2,6 @@
 
 import { useState, useCallback, useEffect } from "react";
 import TreeView from "@/components/TreeView";
-import AddCategoryModal from "@/components/AddCategoryModal";
-import AddFunctionModal from "@/components/AddFunctionModal";
 
 import initialCategories from "@/data/categories.json";
 import initialFunctions from "@/data/functions.json";
@@ -16,38 +14,10 @@ export default function HomePage() {
     initialFunctions.length > 0 ? initialFunctions[0] : null
   );
 
-  const [showAddCategory, setShowAddCategory] = useState(false);
-  const [showAddFunction, setShowAddFunction] = useState(false);
-  const [addFunctionCategoryId, setAddFunctionCategoryId] = useState(null);
-
   // 处理功能选择
   const handleSelectFunction = useCallback((func) => {
     setSelectedFunc(func);
   }, []);
-
-  // 新增分类
-  const handleAddCategory = useCallback((newCategory) => {
-    setCategories((prev) => [...prev, newCategory]);
-  }, []);
-
-  // 新增功能
-  const handleAddFunction = useCallback((newFunc) => {
-    setFunctions((prev) => [...prev, newFunc]);
-  }, []);
-
-  // 切换到上一个功能
-  const goToPrev = () => {
-    const currentIndex = functions.findIndex((f) => f.id === selectedFunc?.id);
-    const prevIndex = currentIndex <= 0 ? functions.length - 1 : currentIndex - 1;
-    setSelectedFunc(functions[prevIndex]);
-  };
-
-  // 切换到下一个功能
-  const goToNext = () => {
-    const currentIndex = functions.findIndex((f) => f.id === selectedFunc?.id);
-    const nextIndex = (currentIndex + 1) % functions.length;
-    setSelectedFunc(functions[nextIndex]);
-  };
 
   const carModels = selectedFunc?.carModels?.length > 0 
     ? selectedFunc.carModels 
@@ -67,11 +37,6 @@ export default function HomePage() {
           functions={functions}
           onSelectFunction={handleSelectFunction}
           selectedFuncId={selectedFunc?.id}
-          onAddCategory={() => setShowAddCategory(true)}
-          onAddFunction={(categoryId) => {
-            setAddFunctionCategoryId(categoryId);
-            setShowAddFunction(true);
-          }}
         />
       </div>
 
@@ -83,34 +48,11 @@ export default function HomePage() {
               <div className="w-full max-w-5xl mx-auto space-y-16">
                 {/* 上方：功能详情 */}
                 <div className="space-y-8">
-                  {/* 功能名称和切换按钮水平对齐 */}
-                  <div className="flex items-center justify-between">
-                    {/* 功能名称 */}
+                  {/* 功能名称 */}
+                  <div className="flex items-center">
                     <h2 className="text-5xl font-bold leading-tight">
                       {selectedFunc.funcName || selectedFunc.name}
                     </h2>
-
-                    {/* 上下切换按钮 */}
-                    <div className="flex items-center gap-2">
-                      <button
-                        onClick={goToPrev}
-                        className="p-2 rounded-lg bg-white/10 hover:bg-white/20 text-white/80 hover:text-white transition-all duration-200"
-                        title="上一个功能"
-                      >
-                        <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
-                        </svg>
-                      </button>
-                      <button
-                        onClick={goToNext}
-                        className="p-2 rounded-lg bg-white/10 hover:bg-white/20 text-white/80 hover:text-white transition-all duration-200"
-                        title="下一个功能"
-                      >
-                        <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
-                        </svg>
-                      </button>
-                    </div>
                   </div>
 
                   {/* 功能描述 */}
@@ -231,21 +173,6 @@ export default function HomePage() {
           </div>
         )}
       </main>
-
-      {/* 模态框 */}
-      <AddCategoryModal
-        isOpen={showAddCategory}
-        onClose={() => setShowAddCategory(false)}
-        onAdd={handleAddCategory}
-      />
-
-      <AddFunctionModal
-        isOpen={showAddFunction}
-        onClose={() => setShowAddFunction(false)}
-        categoryId={addFunctionCategoryId}
-        onAdd={handleAddFunction}
-      />
-
-      </div>
+    </div>
   );
 }

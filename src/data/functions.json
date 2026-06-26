@@ -925,6 +925,116 @@
     "funcName": "全量车辆语音控制",
     "definition": "支持语音操控全车硬件与设置，涵盖空调、门窗、天窗、座椅、灯光、后备箱、充电、底盘、车机设置等全量车身控制功能，实现无触控用车。",
     "demoCommand": "打开空调 / 打开天窗 / 调节座椅",
+    "subFunctions": [
+      {
+        "id": 3701,
+        "name": "空调控制",
+        "definition": "支持语音控制空调开关、温度调节、风量调节、出风口切换等，打造舒适车内环境。",
+        "demoCommand": "打开空调 / 调节温度到26度",
+        "carModels": [
+          { "carModel": "理想L6", "embedUrl": "" },
+          { "carModel": "问界M8", "embedUrl": "" },
+          { "carModel": "银河M9", "embedUrl": "" },
+          { "carModel": "深蓝L06", "embedUrl": "" }
+        ]
+      },
+      {
+        "id": 3702,
+        "name": "门窗控制",
+        "definition": "支持语音控制车窗升降、车门开关，实现便捷的门窗操作。",
+        "demoCommand": "打开车窗 / 关闭车门",
+        "carModels": [
+          { "carModel": "理想L6", "embedUrl": "" },
+          { "carModel": "问界M8", "embedUrl": "" },
+          { "carModel": "银河M9", "embedUrl": "" },
+          { "carModel": "深蓝L06", "embedUrl": "" }
+        ]
+      },
+      {
+        "id": 3703,
+        "name": "天窗控制",
+        "definition": "支持语音控制天窗开关、天窗遮阳帘调节，享受自然采光与通风。",
+        "demoCommand": "打开天窗 / 关闭天窗",
+        "carModels": [
+          { "carModel": "理想L6", "embedUrl": "" },
+          { "carModel": "问界M8", "embedUrl": "" },
+          { "carModel": "银河M9", "embedUrl": "" },
+          { "carModel": "深蓝L06", "embedUrl": "" }
+        ]
+      },
+      {
+        "id": 3704,
+        "name": "座椅控制",
+        "definition": "支持语音控制座椅调节、座椅加热、座椅通风、座椅按摩等功能，提升乘坐舒适度。",
+        "demoCommand": "调节座椅 / 打开座椅按摩",
+        "carModels": [
+          { "carModel": "理想L6", "embedUrl": "" },
+          { "carModel": "问界M8", "embedUrl": "" },
+          { "carModel": "银河M9", "embedUrl": "" },
+          { "carModel": "深蓝L06", "embedUrl": "" }
+        ]
+      },
+      {
+        "id": 3705,
+        "name": "灯光控制",
+        "definition": "支持语音控制大灯开关、氛围灯调节、阅读灯控制等，营造舒适的车内照明环境。",
+        "demoCommand": "打开大灯 / 调节氛围灯",
+        "carModels": [
+          { "carModel": "理想L6", "embedUrl": "" },
+          { "carModel": "问界M8", "embedUrl": "" },
+          { "carModel": "银河M9", "embedUrl": "" },
+          { "carModel": "深蓝L06", "embedUrl": "" }
+        ]
+      },
+      {
+        "id": 3706,
+        "name": "后备箱控制",
+        "definition": "支持语音控制后备箱开关，方便取放行李物品。",
+        "demoCommand": "打开后备箱 / 关闭后备箱",
+        "carModels": [
+          { "carModel": "理想L6", "embedUrl": "" },
+          { "carModel": "问界M8", "embedUrl": "" },
+          { "carModel": "银河M9", "embedUrl": "" },
+          { "carModel": "深蓝L06", "embedUrl": "" }
+        ]
+      },
+      {
+        "id": 3707,
+        "name": "充电控制",
+        "definition": "支持语音控制充电开始、停止、充电功率调节等，智能管理车辆充电。",
+        "demoCommand": "开始充电 / 停止充电",
+        "carModels": [
+          { "carModel": "理想L6", "embedUrl": "" },
+          { "carModel": "问界M8", "embedUrl": "" },
+          { "carModel": "银河M9", "embedUrl": "" },
+          { "carModel": "深蓝L06", "embedUrl": "" }
+        ]
+      },
+      {
+        "id": 3708,
+        "name": "底盘控制",
+        "definition": "支持语音控制悬挂调节、底盘升降等，适配不同路况需求。",
+        "demoCommand": "调节悬挂 / 升高底盘",
+        "carModels": [
+          { "carModel": "理想L6", "embedUrl": "" },
+          { "carModel": "问界M8", "embedUrl": "" },
+          { "carModel": "银河M9", "embedUrl": "" },
+          { "carModel": "深蓝L06", "embedUrl": "" }
+        ]
+      },
+      {
+        "id": 3709,
+        "name": "车机设置",
+        "definition": "支持语音控制导航设置、音量调节、音效设置、屏幕亮度调节等车机功能。",
+        "demoCommand": "设置导航 / 调节音量",
+        "carModels": [
+          { "carModel": "理想L6", "embedUrl": "" },
+          { "carModel": "问界M8", "embedUrl": "" },
+          { "carModel": "银河M9", "embedUrl": "" },
+          { "carModel": "深蓝L06", "embedUrl": "" }
+        ]
+      }
+    ],
     "carModels": [
       {
         "carModel": "理想L6",
